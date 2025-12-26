@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories Management</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="../photos/R logo.png"> 
+    <link rel="stylesheet" href="../css/catemanagement.css">
+    <link rel="stylesheet" href="../CSS/responsive.css">
+</head>
+<body>
+      <header id="header">
+        <div class="container">
+          <div class="logo"><img src="../photos/renturn logo.png" alt="logo"></div>
+         
+          <nav>
+            <div class="nav-v">         
+              <a href="../index.html">Home</a>
+              <a href="../pages/about.html">About Us</a>
+              <!-- Dropdown Categories -->
+              <div class="dropdown">
+                <button class="dropbtn">Categories ▾</button>
+                <div class="dropdown-content">
+                  <a href="../pages/electronics.html">Electronics</a>
+                  <a href="../pages/tools.html">Tools</a>
+                  <a href="../pages/clothes.html">Clothes</a>
+                  <a href="../pages/music.html">Musical instruments</a>
+                </div>
+              </div>
+            </div>
+            <button class="nav-btn" onclick="window.location='../pages/cart.html'">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+            <button class="nav-btn" onclick="window.location='../pages/login.html'">
+              <i class="fa-solid fa-user"></i>
+            </button>
+            <button class="nav-btn" id="langToggle" >
+              <i class="fa-solid fa-globe"></i>
+            </button>
+          </nav>
+        </div>
+      </header>
+
+    <!-- Sidebar -->
+  <div class="sidebar">
+<div class="profile-container">
+    <img src="../photos/adminprofile.png" alt="Admin Profile" class="admin-profile">
+<h3>Admin Profile</h3>
+<p>Full Name :</p>
+<b>Sarah Amr</b> 
+<p>Email :</p>
+<b>📧 sara@email.com</b>
+<p>Phone No. :</p>
+<b>📞 +20 100 715 519</b>
+
+<button class="edit"><img src="../photos/svg.png" alt="Edit Profile" /> Edit Profile</button>
+<button class="logout"><img src="../photos/Vector.png" alt="Logout" /> Logout</button>
+
+</div>
+<div class="menu">
+<a href="../pages/adminpage.html" ><img src="../photos/users-icon.png" alt="users-icon"> Users</a>
+<a href="#" class="active"><img src="../photos/categories-icon.png" alt="categories-icon"> Categories</a>
+<a href="../pages/userproductsman.html"><img src="../photos/products-icon.png" alt="products-icon"> Products</a>
+<a href="../pages/paymentman.html"><img src="../photos/payment-icon.png" alt="payment-icon"> Payment Methods</a>
+<a href="../pages/activerentals.html"><img src="../photos/activerentals.png" alt="active-rentals-icon"> Active Rentals</a>
+</div>
+</div>
+
+<!-- Main Content -->
+  <div class="main">
+    <div class="topbar">
+      <h2>Categories Management</h2>
+      
+    </div>
+
+    <div class="stats">
+      <div class="stat">
+        <div style="display: flex; flex-direction: column;">
+          <p>Total Categories</p>
+          <h3>4</h3>
+        </div>
+        <img src="../photos/totalcate.png" alt="">
+      </div>
+      <div class="stat">
+        <div style="display: flex; flex-direction: column;">
+          <p>Total Products</p>
+          <h3>80</h3>
+        </div>
+        <img src="../photos/totalprod.png" alt="users-icon">
+      </div>
+      <div class="stat">
+        <div style="display: flex; flex-direction: column;">
+          <p>Active Categories</p>
+          <h3>5</h3>
+        </div>
+        <img src="../photos/activecate.png" alt="">
+      </div>
+      <div class="stat">
+        <div style="display: flex; flex-direction: column;">
+          <p>Inactive Categories</p>
+          <h3>13</h3>
+        </div>
+        <img src="../photos/inactive.png" alt="">
+      </div>
+  </div>
+  <div>
+  <button class="add-category-btn"><img src="../photos/plus.png" alt="Add User Icon" /> Add Category</button>
+  </div>
+  <!-- users-toolbar -->
+  <div class="users-toolbar">
+    <h3>Product Categories</h3>
+    <div class="search-box">
+         <input type="text" placeholder="Search for Category" />
+        <i class="fa-solid fa-search"></i>
+      </div>
+              <div class="dropdown-filter">
+         <button class="filterbtn"><img src="../photos/filter.png" alt="">Filter</button>
+          <div class="dropdown-content-filter">
+            <a>active</a>
+            <a>inactive</a>
+            </div>
+       
+    </div>
+  </div>
+  <!-- users-table -->
+   <table>
+      <thead>
+        <tr>
+          <th>Category ID</th>
+          <th>Category Name</th>
+          <th>Number of Products</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+       <tbody id="userTable">
+        <tr>
+          <td>#001</td>
+          <td>Electronics</td>
+          <td>23</td>
+         
+        <td class="actions">
+            <button class="edit-btn"><img src="../photos/edit.png" alt="Edit" /></button>
+            <button class="delete-btn"><img src="../photos/trash.png" alt="Delete" /></button>
+          
+        </td>
+        </tr>
+
+         <tr>
+          <td>#002</td>
+          <td>clothes</td>
+          <td>15</td>
+         
+        <td class="actions">
+            <button class="edit-btn"><img src="../photos/edit.png" alt="Edit" /></button>
+            <button class="delete-btn"><img src="../photos/trash.png" alt="Delete" /></button>
+          
+        </td>
+        </tr>
+         <tr>
+          <td>#003</td>
+          <td>Musical Instruments</td>
+          <td>14</td>
+          
+        <td class="actions">
+            <button class="edit-btn"><img src="../photos/edit.png" alt="Edit" /></button>
+            <button class="delete-btn"><img src="../photos/trash.png" alt="Delete" /></button>
+         
+        </td>
+        </tr>
+
+         <tr>
+          <td>#004</td>
+          <td>Tools</td>
+          <td>20</td>
+          
+        <td class="actions">
+            <button class="edit-btn"><img src="../photos/edit.png" alt="Edit" /></button>
+            <button class="delete-btn"><img src="../photos/trash.png" alt="Delete" /></button>
+         
+        </td>
+        </tr>
+       </tbody>
+   </table>
+
+          <!-- pagination -->
+  <div class="pagination">
+      <button class="prev">Previous</button>
+      <button class="active">1</button>
+      <button>2</button>
+      <button class="prev">Next</button>
+    </div>
+   </div>
+
+
+  <script>
+    //  delete action
+    document.querySelectorAll('.delete-btn').forEach(btn => {
+      btn.addEventListener('click', function(){
+        this.closest('tr').remove();
+      });
+    });
+  </script>
+ 
+
+<script src="../../lang.js"></script>
+ <script src="./js/cart.js"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About US</title>
+    <link rel="stylesheet" href="../CSS/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/responsive.css">
+</head>
+<body>
+     <!-- Header -->
+  <header id="header">
+    <div class="container">
+      <div class="logo"><img src="../photos/renturn logo.png" alt="logo"></div>
+      <div class="search">
+        <input  type="text" id="search" placeholder="Search for a product" />
+        <p id="error">⚠️ Please enter a category name</p>
+        <i class="fa-solid fa-search" onclick="validateSearch()"></i>
+      </div>
+      <nav>
+        <div class="nav-v">
+        <a href="../index.html">Home</a>
+        <a href="./pages/about.html">About Us</a>
+        <!-- Dropdown Categories -->
+        <div class="dropdown">
+          <button class="dropbtn">Categories ▾</button>
+          <div class="dropdown-content">
+            <a href="./electronics.html">Electronics</a>
+            <a href="./tools.html">Tools</a>
+            <a href="./clothes.html">Clothes</a>
+            <a href="./music.html">Musical instruments</a>
+          </div>
+        </div>
+        </div>
+
+      <button class="nav-btn" onclick="window.location.href='./cart.html'">
+  <i class="fa-solid fa-cart-shopping"></i>
+</button>
+
+<button class="nav-btn" onclick="window.location.href='./signin.html'">
+  <i class="fa-solid fa-user"></i>
+</button>
+
+<button class="nav-btn" id="langToggle" >
+  <i class="fa-solid fa-globe"></i>
+</button>
+
+      </nav>
+    </div>
+  </header>
+  <br><br><br>
+
+
+
+
+  <!-- ========== Section One (Header Banner) ========== -->
+  <div class="header-banner">
+    <img src="../photos/done2.png" alt="About Banner">
+    <div class="title">
+      <h1>About Renturn</h1>
+      <p>Connecting communities through smart sharing solutions</p>
+    </div>
+  </div>
+
+  <!-- ========== Section Two (Our Story) ========== -->
+  <div class="section-story">
+    <img src="../photos/left.png" alt="Our Story">
+    <div class="text">
+      <h1>Our Story</h1>
+      <p>It all started with a simple question: 
+        <span>why buy expensive items that we use once or twice a year, only to store them away?</span>
+        From ladders to carpet machines to party equipment, we realized that sharing and renting can save money, space, and resources. 
+        That’s how <span>"Renturn"</span> was born — a platform where you can rent from us or from others around you.
+      </p>
+    </div>
+  </div>
+
+  <!-- ========== Section Three (Our Purpose) ========== -->
+  <div class="section-purpose">
+    <div class="text">
+      <h1>Our Purpose</h1>
+      <p>We exist to make life easier and more affordable. By connecting people who own items with those who need them, and by offering our own stock of useful items, we create a smarter, more sustainable way to access things without the burden of ownership.</p>
+    </div>
+    <img src="../photos/right.png" alt="Our Purpose">
+  </div>
+
+  <!-- ========== Section Four (What We Offer) ========== -->
+  <div class="section-offer">
+    <h1>What We Offer</h1>
+    
+    <p>Our comprehensive platform connects people and businesses, making tool and equipment<br>
+       <span>rental simple, secure, and sustainable.</span>
+    </p>
+
+    <div class="grid">
+      <div class="card">
+        <img src="../photos/secFour1.png" alt="What We Offer">
+        <h1>Wide Variety of Items</h1>
+        <p>We provide everything from party and event equipment to household tools and camping gear. Whatever you need for a short time, you can easily find it here.</p>
+      </div>
+
+      <div class="card">
+        <img src="../photos/secFour2.png" alt="">
+        <h1>Two Sources of Renting</h1>
+        <p>You can rent items directly from us or from people in the community who list their belongings on the platform. This gives users more options and more flexibility.</p>
+      </div>
+
+      <div class="card">
+        <img src="../photos/secFour3.png" alt="">
+        <h1>Safe & Verified Listings</h1>
+        <p>We make sure that every product listed is real, safe, and in good condition. This ensures trust between renters and owners.</p>
+      </div>
+
+      <div class="card">
+        <img src="../photos/secFour4.png" alt="">
+        <h1>Smart Booking & Scheduling</h1>
+        <p>You can easily check the availability of items, book them for the exact dates you need, and avoid any overlap. This makes the process smooth and stress-free.</p>
+      </div>
+
+      <div class="card">
+        <img src="../photos/secFour5.png" alt="">
+        <h1>Easy-to-Use Platform</h1>
+        <p>Our website is simple, fast, and user-friendly. You can browse items, book them, and manage your rentals in just a few clicks.</p>
+      </div>
+
+      <div class="card">
+        <img src="../photos/secFour6.png" alt="">
+        <h1>Affordable Access</h1>
+        <p>Instead of paying a large amount to buy something you’ll barely use, you can rent it for a fraction of the price. This way, everyone can access what they need.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== Section Five (What Sets Us Apart) ========== -->
+  <div class="section-apart">
+    <h1>What Sets Us Apart</h1>
+    <p>Our unique approach to tool and equipment rental creates an experience that stands out from<br>
+       <span>traditional options.</span>
+    </p>
+
+    <div class="grid">
+      <div class="card">
+        <img src="../photos/secFive1.png" alt="">
+        <div>
+          <h1>Focus on Rarely Used Items</h1>
+          <p>We don’t rent out everyday things; we focus on items that people usually buy once and hardly use. This makes us stand out and fill a real gap.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../photos/secFive2.png" alt="">
+        <div>
+          <h1>Hybrid Model</h1>
+          <p>Our model combines two worlds: items we own and items listed by other users. This creates a bigger marketplace and makes the platform richer.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../photos/secFive3.png" alt="">
+        <div>
+          <h1>Community Driven</h1>
+          <p>People are at the center of our platform. By letting everyone share their items, we build trust, cooperation, and a culture of sharing.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../photos/secFive4.png" alt="">
+        <div>
+          <h1>Eco-Friendly Approach</h1>
+          <p>By encouraging sharing instead of buying new things, we reduce waste and support sustainability.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../photos/secFive5.png" alt="">
+        <div>
+          <h1>Anything, Anytime</h1>
+          <p>Our platform lets you access a wide range of items whenever you need them, no limits, no hassle.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="../photos/secFive6.png" alt="">
+        <div>
+          <h1>Seamless Delivery & Pickup</h1>
+          <p>We handle delivery and pickup efficiently, so users don’t have to worry about bringing items back or picking them up.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== Section Six (Our Vision) ========== -->
+  <div class="section-vision">
+    <img src="../photos/left2.png" alt="Vision">
+    <div class="text">
+      <h1>Our Vision</h1>
+      <p>Our vision is to create a sustainable, affordable, and smart sharing ecosystem where everyone can easily access what they need without waste. We aim to build stronger communities by promoting the culture of renting and sharing, making life simpler and more sustainable for all.</p>
+    </div>
+  </div>
+
+</body>
+</html>
+
+<!------------------------------------------------------Section sex ------------------------------------------------------------>
+   <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="footer-container">
+ 
+      <!-- Logo + icons -->
+      <div class="footer-section">
+        <img src="../photos/Rectangle 17.png" alt="Renturn Logo" class="logo">
+       
+        <p>Your trusted partner for quality tool<br> and equipment rentals.</p>
+      </div>
+ 
+      <!-- Quick Links -->
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./about.html">About Us</a></li>
+          <li><a href="./privacypolicy.html">Privacy Policy</a></li>
+          <li><a href="./termsandconditions.html">Terms and Conditions</a></li>
+        </ul>
+      </div>
+ 
+      <!-- Account -->
+      <div class="footer-section">
+        <h4>Account</h4>
+        <ul>
+          <li><a href="./cart.html">Shopping Cart</a></li>
+          <li><a href="./account.html">My Account</a></li>
+
+        </ul>
+      </div>
+ 
+      <!-- Support -->
+      <div class="footer-section">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="./help.html">Help Center</a></li>
+          <li><a href="./safety.html">Safety Guidelines</a></li>
+         
+        </ul>
+      </div>
+   
+    <!-- Contact Section -->
+   <div class="footer-section">
+        <h4>Contact Us</h4>
+        <ul>
+          <li><img src="../photos/Rectangle 14.png" alt="Phone Icon" class="phone-icon"> +201 123 4567 </li>
+          <li><img src="../photos/mail.png" alt="Email Icon" class="email-icon"> renturner@gmail.com</li>
+          <br><p>follow us on social media</p><br>
+           <div class="social-icons">
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+        </ul>
+      </div>
+      </div>
+ 
+    <!-- Bottom Section -->
+    <div class="footer-bottom">
+      <div class="payment-icons">
+        <a href="#" aria-label="PayPal"><i class="fab fa-cc-paypal"></i></a>
+        <a href="#" aria-label="Apple Pay"><i class="fab fa-cc-apple-pay"></i></a>
+        <a href="#" aria-label="Visa"><i class="fab fa-cc-visa"></i></a>
+      </div>
+      <p>© 2025 Renturn. All rights reserved.</p>
+    </div>
+  </footer>
+ 
+</body>
+</html>
+
+<script src="../../lang.js"></script>
+<script src="../js/innerSearch.js"></script>
+</body>
+</html>

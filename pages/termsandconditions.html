@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms and Conditions</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="../CSS/terms.css">
+  <link rel="stylesheet" href="../CSS/responsive.css">
+  </head>
+<>
+   <header id="header">
+    <div class="container">
+      <div class="logo"><img src="../photos/renturn logo.png" alt="logo"></div>
+      <div class="search">
+        <input  type="text" id="search" placeholder="Search for a product" />
+        <p id="error">⚠️ Please enter a category name</p>
+        <i class="fa-solid fa-search" onclick="validateSearch()"></i>
+      </div>
+      <nav>
+        <div class="nav-v">
+        <a href="../index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <!-- Dropdown Categories -->
+        <div class="dropdown">
+          <button class="dropbtn">Categories ▾</button>
+          <div class="dropdown-content">
+            <a href="./electronics.html">Electronics</a>
+            <a href="./tools.html">Tools</a>
+            <a href="./clothes.html">Clothes</a>
+            <a href="./music.html">Musical instruments</a>
+          </div>
+        </div>
+        </div>
+
+      <button class="nav-btn" onclick="window.location.href='./cart.html'">
+  <i class="fa-solid fa-cart-shopping"></i>
+</button>
+
+<button class="nav-btn" onclick="window.location.href='./signin.html'">
+  <i class="fa-solid fa-user"></i>
+</button>
+
+      <button class="nav-btn" id="langToggle" >
+        <i class="fa-solid fa-globe"></i>
+      </button>
+      </nav>
+    </div>
+  </header>
+  <br><br><br><br><br><br><br>
+
+  <h1>Terms and Conditions</h1>
+  <p class="sub-heading">Please read these terms carefully before using our rental platform services</p>
+  <p class="date">Last updated: January 2025</p>
+
+<div class="card">
+    <h2 class="section-title"><i class="fa-solid fa-book"></i> Definitions</h2>
+    <div class="definitions">
+      <p><span>"We/Us/Our"</span> refers to Renturn and its affiliates</p>
+      <p><span>"You/User/Renter"</span> refers to the person using our services</p>
+      <p><span>"Equipment"</span> refers to all items available for rental including clothes, electronics, cameras, drones, audio gear, and projectors</p>
+      <p><span>"Rental Period"</span> refers to the agreed duration for equipment use</p>
+      <p><span>"Rental Fee"</span> refers to the cost of renting equipment</p>
+      <p><span>"Security Deposit"</span> refers to the refundable amount held as security</p>
+    </div>
+  </div>
+
+  <!-- User Account Requirements Section -->
+  <div class="card">
+    <h2 class="section-title"><i class="fa-solid fa-user"></i> User Account Requirements</h2>
+    <p>
+      To use our rental services, you must create an account and provide accurate, complete information.
+      <br><br>You are responsible for maintaining the security of your account credentials and all activities under your account.
+    </p>
+    <div class="note">
+      <i class="fa-solid fa-shield-halved"></i> 
+      Account holders must be 18 years or older and provide valid identification when required.
+    </div>
+  </div>
+
+  <!-- User Obligations Section -->
+  <div class="card">
+    <h2 class="section-title"><i class="fa-solid fa-users"></i> User Obligations</h2>
+    <div class="obligations">
+      <div>
+        <h3>For Renters</h3>
+        <ul>
+          <li><i class="fa-solid fa-check"></i> Return items in original condition</li>
+          <li><i class="fa-solid fa-check"></i> Pay rental fees on time</li>
+          <li><i class="fa-solid fa-check"></i> Report damages immediately</li>
+          <li><i class="fa-solid fa-check"></i> Use items responsibly</li>
+        </ul>
+      </div>
+      <div>
+        <h3>For Owners</h3>
+        <ul>
+          <li><i class="fa-solid fa-check"></i> Provide accurate item descriptions</li>
+          <li><i class="fa-solid fa-check"></i> Ensure items are clean and functional</li>
+          <li><i class="fa-solid fa-check"></i> Be organized for Pickup/Delivery</li>
+          <li><i class="fa-solid fa-check"></i> Set clear rental terms</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- The Rental Agreement Section -->
+  <div class="card">
+    <h2 class="section-title"><i class="fa-solid fa-file-contract"></i> The Rental Agreement</h2>
+    <p>
+      When you place an order, it's just an offer to rent the equipment (not yet a contract). 
+      The rental contract only starts once the order is confirmed. We reserve the right to refuse any order for any reason, 
+      Equipment not available, Poor creditworthiness (you may not be able to pay), Violation of the terms.
+    </p>
+    <br>
+    <p class="highlight">
+      "We may require the renter to make an advance payment or provide a security (such as a credit card or deposit) 
+      to verify creditworthiness and ensure compliance with payment terms."
+    </p>
+  </div>
+
+  <!-- Shipping & Delivery Section -->
+  <div class="card">
+    <h2 class="section-title"><i class="fa-solid fa-truck"></i> Shipping & Delivery</h2>
+    <p>
+      We offer various shipping options with different timelines. 
+      Upon delivery, you must inspect the equipment immediately and report any damage or missing items within 24 hours. 
+      Failure to report issues promptly may result in charges.
+    </p>
+  </div>
+
+  <!-- Use of Equipment Section -->
+  <div class="card">
+    <h2 class="section-title"><i class="fa-solid fa-screwdriver-wrench"></i> Use of Equipment</h2>
+    <p>Equipment must be used responsibly and for its intended purpose only. You agree to:</p>
+    <ul>
+      <li>Use equipment in compliance with all applicable laws</li>
+      <li>Not modify, alter, or tamper with equipment</li>
+      <li>Not sublease or transfer equipment to unauthorized individuals</li>
+      <li>Handle equipment with reasonable care</li>
+    </ul>
+  </div>
+
+  <!-- Returns Process Section -->
+  <div class="card">
+    <h2 class="section-title"><i class="fa-solid fa-rotate-left"></i> Returns Process</h2>
+    <p>
+      Equipment must be returned in original packaging, in the same condition as received, by the agreed return date. 
+      Late returns may incur additional fees. All accessories and documentation must be included.
+    </p>
+  </div>
+
+  <!-- Cancellation Policy Section -->
+  <div class="card">
+    <h2 class="section-title"><i class="fa-solid fa-xmark"></i> Cancellation Policy</h2>
+    <div class="note" style="flex-direction: column; align-items: flex-start;">
+      <p>• Users may cancel orders 24 hours before scheduled shipment for full refund</p>
+      <p>• Cancellations after shipment are non-refundable</p>
+      <p>• We reserve the right to cancel any order and will provide full refund if we do</p>
+    </div>
+  </div>
+
+  <!-- Intellectual Property Section -->
+  <div class="card">
+    <h2 class="section-title"><i class="fa-solid fa-copyright"></i> Intellectual Property</h2>
+    <p>
+      All website content, branding, design, and proprietary technology remain the exclusive property of Renturn. 
+      Unauthorized use is strictly prohibited.
+    </p>
+  </div>
+
+  <!-- Governing Law Section -->
+  <div class="card">
+    <h2 class="section-title"><i class="fa-solid fa-scale-balanced"></i> Governing Law</h2>
+    <p>
+      These Terms and Conditions are governed by the laws of Cairo, Egypt. 
+      Any disputes will be resolved in the courts of Cairo, Egypt.
+    </p>
+  </div>
+
+  <!-- Changes to Terms Section -->
+  <div class="card">
+    <h2 class="section-title"><i class="fa-solid fa-pen-to-square"></i> Changes to Terms</h2>
+    <p>
+      We reserve the right to modify these terms at any time. 
+      Changes become effective immediately upon posting to our website. 
+      Continued use of our services constitutes acceptance of modified terms.
+    </p>
+  </div>
+  <br><br><br>
+<!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="footer-container">
+
+      <!-- Logo + icons -->
+      <div class="footer-section">
+        <img src="../photos/Rectangle 17.png" alt="Renturn Logo" class="logo">
+       
+        <p>Your trusted partner for quality tool<br> and equipment rentals.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./about.html">About Us</a></li>
+          <li><a href="./privacypolicy.html">Privacy Policy</a></li>
+          <li><a href="./termsandconditions.html">Terms and Conditions</a></li>
+        </ul>
+      </div>
+
+      <!-- Account -->
+      <div class="footer-section">
+        <h4>Account</h4>
+        <ul>
+          <li><a href="./cart.html">Shopping Cart</a></li>
+          <li><a href="./account.html">My Account</a></li>
+        
+        </ul>
+      </div>
+
+      <!-- Support -->
+      <div class="footer-section">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="./help.html.html">Help Center</a></li>
+          <li><a href="./safety.html.html">Safety Guidelines</a></li>
+          
+        </ul>
+      </div>
+    
+    <!-- Contact Section -->
+   <div class="footer-section">
+        <h4>Contact Us</h4>
+        <ul>
+          <li><img src="../photos/Rectangle 14.png" alt="Phone Icon" class="phone-icon"> +201 123 4567 </li>
+          <li><img src="../photos/mail.png" alt="Email Icon" class="email-icon"> renturner@gmail.com</li>
+          <br><p>follow us on social media</p><br>
+           <div class="social-icons">
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+        </ul>
+      </div>
+      </div>
+
+    <!-- Bottom Section -->
+    <div class="footer-bottom">
+      <div class="payment-icons">
+        <a href="#" aria-label="PayPal"><i class="fab fa-cc-paypal"></i></a>
+        <a href="#" aria-label="Apple Pay"><i class="fab fa-cc-apple-pay"></i></a>
+        <a href="#" aria-label="Visa"><i class="fab fa-cc-visa"></i></a>
+      </div>
+      <p>© 2025 Renturn. All rights reserved.</p>
+    </div>
+  </footer>
+
+<script src="../../lang.js"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>

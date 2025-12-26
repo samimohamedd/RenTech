@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Renturn</title>
+  <link rel="icon" href="../photos/renturn logo.png" type="image.png">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+  <link rel="stylesheet" href="../CSS/conf.css"/>
+  
+</head>
+<body>
+  <!-- Header -->
+  <header id="header">
+    <div class="container">
+      <div class="logo"><img src="../photos/renturn logo.png" alt="logo"></div>
+      <div class="search">
+        <input type="text" placeholder="Search for a product" />
+        <i class="fa-solid fa-search"></i>
+      </div>
+      <nav>
+        <div class="nav-v">
+        <a href="../index.html">Home</a>
+        <a href="../about.html">About Us</a>
+         <!-- Dropdown Categories -->
+        <div class="dropdown">
+          <button class="dropbtn">Categories ▾</button>
+          <div class="dropdown-content">
+            <a href="./electronics.html">Electronics</a>
+            <a href="./tools.html">Tools</a>
+            <a href="./clothes.html">Clothes</a>
+              <a href="./music.html">Musical instruments</a>
+          </div>
+        </div>
+        </div>
+
+      <button class="nav-btn" onclick="window.location='./cart.html'">
+  <i class="fa-solid fa-cart-shopping"></i>
+</button>
+
+<button class="nav-btn" onclick="window.location='./signin.html'">
+  <i class="fa-solid fa-user"></i>
+</button>
+
+      <button class="nav-btn" id="langToggle" >
+        <i class="fa-solid fa-globe"></i>
+      </button>
+      </nav>
+    </div>
+  </header>
+
+  <br><br><br><br>
+
+
+ <!-- Confirmation Section -->
+<div class="page-container">
+  <div class="confirmation-container">
+    <!-- Success Icon -->
+    <div class="icon-circle"><span class="checkmark">✓</span></div>
+    
+    <h2>Order Confirmed!</h2>
+    <p class="subtitle">
+      Thank you for your rental order. We’ve received your payment and are preparing your items.
+    </p>
+
+    <!-- Order Info Box -->
+    <div class="order-box">
+      <p><strong>Order Number</strong><br><span>RNT-BDTIZK30</span></p>
+      <p><strong>Estimated Delivery</strong><br><span>Tuesday, August 26</span></p>
+    </div>
+
+    <!-- Next Steps -->
+    <div class="next-box">
+      <h3>What happens next?</h3>
+      <p><strong>Confirmation Email</strong><br>You’ll receive an email with your order details and tracking information.</p>
+      <p><strong>Preparation</strong><br>We’ll prepare and quality-check your rental items.</p>
+      <p><strong>Delivery/Pickup</strong><br>Your items will be delivered or ready for pickup as scheduled.</p>
+    </div>
+
+    <!-- Buttons -->
+    <div class="buttons">
+      <button class="btn-outline">Back to Cart</button>
+      <button class="btn-primary" id="orderSummaryBtn">View Order Details</button>
+      
+    </div>
+  </div>
+</div>
+
+
+  <!-- Modal -->
+   
+<div id="orderModal" class="modal">
+  <div class="modal-content">
+    <span id="closeModal" class="close">&times;</span>
+
+    <div class="modal-header">
+      <h2>Order Summary</h2>
+      <span class="status confirmed">Confirmed</span>
+    </div>
+    
+
+    <p class="subtitle">
+      Complete details for order <b>RNT-BDTIZK330</b>, including Items, delivery information, and payment details
+    </p>
+
+    <!-- Order Info Card -->
+    <div class="order-info-card">
+      <h3 class="section-title">Order Information</h3>
+      <div class="order-row">
+        <div class="order-col">
+          <h4>Order Number</h4>
+          <p class="order-number">RNT-BDTIZK330</p>
+        </div>
+        <div class="order-col">
+          <h4>Order Date</h4>
+          <p class="order-date">August 23, 2025</p>
+        </div>
+      </div>
+      <p class="delivery">Estimated Delivery: Tuesday, August 26</p>
+    </div>
+
+    <!-- Rental Items -->
+    <div class="card">
+      <h4 class="section-title">Rental items</h4>
+
+      <div class="rental-item">
+        <div class="item-left">
+          <img src="photos/WhatsApp Image 2025-08-19 at 2.15.50 AM.jpeg" alt="Electric Drill">
+          <div>
+            <div class="item-name">Electric Drill</div>
+            <div class="item-days">7 days</div>
+          </div>
+        </div>
+        <div class="item-price">45.00EGP</div>
+      </div>
+
+      <div class="rental-item">
+        <div class="item-left">
+          <img src="../photos/Image (6).jpeg " alt="Circular Saw">
+          <div>
+            <div class="item-name">Circular Saw</div>
+            <div class="item-days">3 days</div>
+          </div>
+        </div>
+        <div class="item-price">35.00EGP</div>
+      </div>
+    </div>
+
+    <!-- Info Cards -->
+    <div class="card-grid">
+      <div class="info-card">
+        <div class="info-header">
+          <img src="../photos/van.png" class="info-logo" alt="Delivery Icon">
+          <h4>Delivery Address</h4>
+        </div>
+        <p>123 Main Street, <br>Downtown</p>
+      </div>
+
+      <div class="info-card">
+        <div class="info-header">
+          <img src="../photos/credit-card.png" class="info-logo" alt="Payment Icon">
+          <h4>Payment Method</h4>
+        </div>
+        <p>Credit Card ending in 1234</p>
+      </div>
+    </div>
+
+    <!-- Summary -->
+    <div class="summary-card">
+      <div class="summary-row"><span>Subtotal</span><span>80.00EGP</span></div>
+      <div class="summary-row"><span>Delivery Fee</span><span>10.00EGP</span></div>
+      <div class="summary-row"><span>Tax</span><span>7.20EGP</span></div>
+      <div class="summary-row total"><span>Total</span><span>97.20EGP</span></div>
+    </div>
+
+    <!-- Buttons -->
+    <div class="buttons">
+      <button class="btn-close">Close</button>
+      <button class="btn-download">Download Receipt</button>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+   <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="footer-container">
+
+      <!-- Logo + icons -->
+      <div class="footer-section">
+        <img src="../photos/Rectangle 17.png" alt="Renturn Logo" class="logo">
+       
+        <p>Your trusted partner for quality tool<br> and equipment rentals.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./about.html">About Us</a></li>
+          <li><a href="./privacypolicy.html">Privacy Policy</a></li>
+          <li><a href="./termsandconditions.html">Terms and Conditions</a></li>
+        </ul>
+      </div>
+
+      <!-- Account -->
+      <div class="footer-section">
+        <h4>Account</h4>
+        <ul>
+          <li><a href="./cart.html">Shopping Cart</a></li>
+          <li><a href="./account.html">My Account</a></li>
+        
+        </ul>
+      </div>
+
+      <!-- Support -->
+      <div class="footer-section">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="./help.html.html">Help Center</a></li>
+          <li><a href="./safety.html.html">Safety Guidelines</a></li>
+          
+        </ul>
+      </div>
+    
+    <!-- Contact Section -->
+   <div class="footer-section">
+        <h4>Contact Us</h4>
+        <ul>
+          <li><img src="../photos/Rectangle 14.png" alt="Phone Icon" class="phone-icon"> +201 123 4567 </li>
+          <li><img src="../photos/mail.png" alt="Email Icon" class="email-icon"> renturner@gmail.com</li>
+          <br><p>follow us on social media</p><br>
+           <div class="social-icons">
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+        </ul>
+      </div>
+      </div>
+
+    <!-- Bottom Section -->
+    <div class="footer-bottom">
+      <div class="payment-icons">
+        <a href="#" aria-label="PayPal"><i class="fab fa-cc-paypal"></i></a>
+        <a href="#" aria-label="Apple Pay"><i class="fab fa-cc-apple-pay"></i></a>
+        <a href="#" aria-label="Visa"><i class="fab fa-cc-visa"></i></a>
+      </div>
+      <p>© 2025 Renturn. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../../lang.js"></script>
+  <script src="../js/conf.js"></script>
+</body>
+</html>

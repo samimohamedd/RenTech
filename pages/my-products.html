@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../CSS/my-products.css">
+    <title>My Products</title>
+</head>
+
+<body>
+    <div class="first-prod">
+        <div class="welcome">
+            <h1>Welcome back, <span class="name">Sarah</span>!</h1>
+            <p>Manage your rentals and earnings</p>
+        </div>
+
+        <div class="menu-prod">
+            <a class="menu-icon" onclick="menubtn()"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+            <div class="menu-drop">
+                <p class="menu-item">Add Products</p>
+                <p class="menu-item">My Products</p>
+                <p class="menu-item logout">Logout <i class="fa-solid fa-arrow-right-from-bracket"></i></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="stats">
+
+        <div class="t-earn">
+            <div class="t-earn-left">
+                <p class="stats-p">Total Earnings</p>
+                <p class="stats-no">2,847 EGP</p>
+            </div>
+            <div class="t-earn-right"><i class="fa-solid fa-dollar-sign"></i></div>
+        </div>
+
+        <div class="t-earn">
+            <div class="t-earn-left">
+                <p class="stats-p">Active Rentals</p>
+                <p class="stats-no">12</p>
+            </div>
+            <div class="t-earn-right"><i class="fa-solid fa-handshake"></i></div>
+        </div>
+
+        <div class="t-earn">
+            <div class="t-earn-left">
+                <p class="stats-p">My Products</p>
+                <p class="stats-no">8</p>
+            </div>
+            <div class="t-earn-right"><i class="fa-solid fa-layer-group"></i></div>
+        </div>
+
+    </div>
+
+    <div class="main-prod">
+        <div class="prod-left main-left-my">
+
+            <div class="p-box p-p-box">
+
+                <div class="info-icon"><i class="fa-solid fa-user"></i></div>
+
+                <h1>Personal Information</h1>
+
+                <div class="p-info">
+                    <p class="info-title">Full Name</p>
+                    <p class="info-info">Sarah Amr</p>
+                </div>
+
+                <div class="p-info">
+                    <p class="info-title">Email</p>
+                    <p class="info-info">sarah.amr@example.com</p>
+                </div>
+
+                <div class="p-info">
+                    <p class="info-title">Phone Number</p>
+                    <p class="info-info">+20 100 715 519</p>
+                </div>
+
+                <div class="p-info">
+                    <p class="info-title">Location</p>
+                    <p class="info-info">Cairo, Egypt</p>
+                </div>
+
+              <button class="edit"><img src="../photos/svg.png" alt="Edit Profile" /> Edit Profile</button>
+
+            </div>
+
+            <div class="p-box-2 p-p-box">
+
+                <h1>Payment Method</h1>
+
+                <div class="box-grey">
+                    <div class="grey-left">
+                        <div class="grey-img">
+                            <img src="../img/visa.png" alt="visa">
+                        </div>
+
+                        <div class="grey-info">
+                            <p class="grey-title">9875 6518</p>
+                            <p class="grey-info"> Expires 12/25</p>
+                        </div>
+                    </div>
+
+                    <p class="grey-right">Primary</p>
+                </div>
+
+                <a href="" class="stat-btn">+ Add Payment Method</a>
+            </div>
+
+            <div class="p-box-2 p-p-box">
+
+                <h1>Recent Activity</h1>
+
+                <div class="box-grey box-cyan">
+                    <div class="grey-title-time">
+                        <p class="grey-tt">New rental request</p>
+                        <p class="grey-time">2 hours ago</p>
+                    </div>
+
+                    <p class="grey-cont">Iphone-11 pro</p>
+                </div>
+
+                <div class="box-grey box-blue">
+                    <div class="grey-title-time">
+                        <p class="grey-tt">New rental request</p>
+                        <p class="grey-time">2 hours ago</p>
+                    </div>
+
+                    <p class="grey-cont">Iphone-11 pro</p>
+                </div>
+
+                <a href="" class="stat-btn">See More</a>
+            </div>
+
+        </div>
+
+        <div class="prod-right">
+            <div class="products-top">
+                <h1 class="products-title">My Products</h1>
+
+                <div class="filter-drop">
+                    <select name="All Categories" id="">
+                        <option value="all-categories">All Categories</option>
+                        <option value="">hammer</option>
+                        <option value="">rents</option>
+                        <option value="">rents</option>
+                        <option value="">rents</option>
+                    </select>
+
+
+                    <select name="All Status" id="">
+                        <option value="All Status">All Status</option>
+                        <option value="bending">bending</option>
+                        <option value="renting">renting</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="products-middle">
+                
+                <div class="prod-card">
+                    <div class="card-img">
+                        <img src="../photos/DSLR camera.png" alt="">
+                    </div>
+
+                    <div class="card-cont">
+
+                        <div class="card-t-p">
+                            <h3 class="card-title">DSLR Camera</h3>
+                            <p class="card-des">Includes 3 lenses and accessories</p>    
+                        </div>
+
+                        <div class="card-price-av">
+                            <p class="card-price">60 EGP/day</p>
+                            <p class="card-rented">rented</p>
+                        </div>
+
+                        <div class="card-btns">
+                            <a href="#" class="card-edit">Edit</a>
+
+                            <a href="#" class="card-delete"><i class="fa-solid fa-trash"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+                
+                <div class="prod-card">
+                    <div class="card-img">
+                        <img src="../photos/Camera.jpeg" alt="">
+                    </div>
+
+                    <div class="card-cont">
+
+                        <div class="card-t-p">
+                            <h3 class="card-title">canon-ef-50mm</h3>
+                            <p class="card-des">Includes 3 lenses and accessories</p>    
+                        </div>
+
+                        <div class="card-price-av">
+                            <p class="card-price">60 EGP/day</p>
+                            <p class="card-available">available</p>
+                        </div>
+
+                        <div class="card-btns">
+                            <a href="#" class="card-edit">Edit</a>
+
+                            <a href="#" class="card-delete"><i class="fa-solid fa-trash"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+                
+                <div class="prod-card">
+                    <div class="card-img">
+                        <img src="../photos/drill.png" alt="">
+                    </div>
+
+                    <div class="card-cont">
+
+                        <div class="card-t-p">
+                            <h3 class="card-title">Professional Drill</h3>
+                            <p class="card-des">Professional power tools</p>    
+                        </div>
+
+                        <div class="card-price-av">
+                            <p class="card-price">60 EGP/day</p>
+                            <p class="card-available">available</p>
+                        </div>
+
+                        <div class="card-btns">
+                            <a href="#" class="card-edit">Edit</a>
+
+                            <a href="#" class="card-delete"><i class="fa-solid fa-trash"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+                
+                <div class="prod-card">
+                    <div class="card-img">
+                        <img src="../photos/bike.png" alt="">
+                    </div>
+
+                    <div class="card-cont">
+
+                        <div class="card-t-p">
+                            <h3 class="card-title">Trek Mountain Bike</h3>
+                            <p class="card-des">Includes helmet and accessories</p>    
+                        </div>
+
+                        <div class="card-price-av">
+                            <p class="card-price">60 EGP/day</p>
+                            <p class="card-available">available</p>
+                        </div>
+
+                        <div class="card-btns">
+                            <a href="#" class="card-edit">Edit</a>
+
+                            <a href="#" class="card-delete"><i class="fa-solid fa-trash"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+                
+                <div class="prod-card">
+                    <div class="card-img">
+                        <img src="../photos/tent.png" alt="">
+                    </div>
+
+                    <div class="card-cont">
+
+                        <div class="card-t-p">
+                            <h3 class="card-title">Coleman Tent</h3>
+                            <p class="card-des">Spacious and durable tent</p>    
+                        </div>
+
+                        <div class="card-price-av">
+                            <p class="card-price">60 EGP/day</p>
+                            <p class="card-available">available</p>
+                        </div>
+
+                        <div class="card-btns">
+                            <a href="#" class="card-edit">Edit</a>
+
+                            <a href="#" class="card-delete"><i class="fa-solid fa-trash"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+                
+                <div class="prod-card">
+                    <div class="card-img">
+                        <img src="../photos/DSLR camera.png" alt="">
+                    </div>
+
+                    <div class="card-cont">
+
+                        <div class="card-t-p">
+                            <h3 class="card-title">DSLR Camera</h3>
+                            <p class="card-des">Includes 3 lenses and accessories</p>    
+                        </div>
+
+                        <div class="card-price-av">
+                            <p class="card-price">60 EGP/day</p>
+                            <p class="card-available">available</p>
+                        </div>
+
+                        <div class="card-btns">
+                            <a href="#" class="card-edit">Edit</a>
+
+                            <a href="#" class="card-delete"><i class="fa-solid fa-trash"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+            
+            </div>
+
+        </div>
+    </div>
+
+
+    <script>
+        let menu = document.querySelector(".menu-drop");
+
+        function menubtn(){
+            menu.classList.toggle("visible")
+        }
+    </script>
+    
+</body>
+
+</html>

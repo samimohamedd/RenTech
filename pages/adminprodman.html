@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Products Management</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="../photos/R logo.png"> 
+    <link rel="stylesheet" href="../css/adminproductsman.css">
+    <link rel="stylesheet" href="../CSS/responsive.css">
+</head>
+<body>
+      <header id="header">
+        <div class="container">
+          <div class="logo"><img src="../photos/renturn logo.png" alt="logo"></div>
+         
+          <nav>
+            <div class="nav-v">         
+              <a href="../index.html">Home</a>
+              <a href="../pages/about.html">About Us</a>
+              <!-- Dropdown Categories -->
+              <div class="dropdown">
+                <button class="dropbtn">Categories ▾</button>
+                <div class="dropdown-content">
+                  <a href="../pages/electronics.html">Electronics</a>
+                  <a href="../pages/tools.html">Tools</a>
+                  <a href="../pages/clothes.html">Clothes</a>
+                  <a href="../pages/music.html">Musical instruments</a>
+                </div>
+              </div>
+            </div>
+            <button class="nav-btn" onclick="window.location='../pages/cart.html'">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+            <button class="nav-btn" onclick="window.location='../pages/login.html'">
+              <i class="fa-solid fa-user"></i>
+            </button>
+            <button class="nav-btn" id="langToggle" >
+              <i class="fa-solid fa-globe"></i>
+            </button>
+          </nav>
+        </div>
+      </header>
+
+    <!-- Sidebar -->
+  <div class="sidebar">
+<div class="profile-container">
+    <img src="../photos/adminprofile.png" alt="Admin Profile" class="admin-profile">
+<h3>Admin Profile</h3>
+<p>Full Name :</p>
+<b>Sarah Amr</b> 
+<p>Email :</p>
+<b>📧 sara@email.com</b>
+<p>Phone No. :</p>
+<b>📞 +20 100 715 519</b>
+
+<button class="edit"><img src="../photos/svg.png" alt="Edit Profile" /> Edit Profile</button>
+<button class="logout"><img src="../photos/Vector.png" alt="Logout" /> Logout</button>
+
+</div>
+<div class="menu">
+<a href="../pages/adminpage.html" ><img src="../photos/users-icon.png" alt="users-icon" > Users</a>
+<a href="../pages/catemanagement.html" ><img src="../photos/categories-icon.png" alt="categories-icon"> Categories</a>
+<a href="../pages/userproductsman.html" class="active"><img src="../photos/products-icon.png" alt="products-icon"> Products</a>
+<a href="../pages/paymentman.html"><img src="../photos/payment-icon.png" alt="payment-icon"> Payment Methods</a>
+<a href="../pages/activerentals.html"><img src="../photos/activerentals.png" alt="active-rentals-icon"> Active Rentals</a>
+</div>
+</div>
+
+<!-- Main Content -->
+  <div class="main">
+    <div class="topbar">
+      <h2>Products Management</h2>
+       </div>
+
+        <!-- stats -->
+<div class="stats">
+      <div class="stat">
+        <div style="display: flex; flex-direction: column;">
+          <p>Total Products</p>
+          <h3>4</h3>
+        </div>
+        <img src="../photos/totalprod.png" alt="">
+      </div>
+      <div class="stat">
+        <div style="display: flex; flex-direction: column;">
+          <p>Products added by admin 1</p>
+          <h3>3</h3>
+        </div>
+        <img src="../photos/admins.png" alt="admins-icon">
+      </div>
+      <div class="stat">
+        <div style="display: flex; flex-direction: column;">
+          <p>Products added by admin 2</p>
+          <h3>5</h3>
+        </div>
+        <img src="../photos/admins.png" alt="">
+      </div>
+</div>
+    <!-- tabs -->
+ <div class="tabs">
+    <button  class="tab" onclick="window.location.href='../pages/userproductsman.html'">User Products</button>
+    <button class="tab-active" onclick="window.location.href='../pages/adminprodman.html'">Admin Products</button>
+  </div>
+
+<button class="add-product-btn"><img src="../photos/plus.png" alt="Add Product Icon" /> Add Product</button>
+
+  <!-- users-toolbar -->
+  <div class="users-toolbar">
+    <h3>Products Lists</h3>
+    <div class="search-box">
+         <input type="text" placeholder="Search for Product" />
+        <i class="fa-solid fa-search"></i>
+      </div>
+              <div class="dropdown-filter">
+         <button class="filterbtn"><img src="../photos/filter.png" alt="">All Categories</button>
+          <div class="dropdown-content-filter">
+            <a>Electronics</a>
+            <a>Clothes</a>
+            <a>Musical Instruments</a>
+            <a>Tools</a>
+            </div>
+       
+    </div>
+       <div class="dropdown-filter">
+         <button class="filterbtn"><img src="../photos/filter.png" alt="">Admins</button>
+          <div class="dropdown-content-filter">
+            <a>Admin1</a>
+            <a>Admin2</a>
+           
+            </div>
+       
+    </div>
+  </div>
+  <!-- users-table -->
+   <table>
+      <thead>
+        <tr>
+          <th>Product ID</th>
+          <th>Product Name</th>
+          <th>Added By</th>
+          <th>Category</th>
+          <th> Price</th>
+          <th>Insurance</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+       <tbody id="userTable">
+        <tr>
+          <td>#AP001</td>
+          <td>Canon EF 50mm f/1.8 STM Lens</td>
+          <td>Admin 1</td>
+          <td>Electronics</td>
+          <td>EGP150/day</td>
+          <td>EGP700</td>
+          
+        <td class="actions">
+            <button class="edit-btn"><img src="../photos/edit.png" alt="Edit" /></button>
+            <button class="delete-btn"><img src="../photos/trash.png" alt="Delete" /></button>
+          <button class="view" onclick="window.location.href='../../../../pages/products/electronics/canon-ef-50mm/canon-ef-50mm.html'">view</button>
+        </td>
+        </tr>
+
+         <tbody id="userTable">
+        <tr>
+          <td>#AP002</td>
+          <td>Addidas Hoddie</td>
+          <td>Admin 1</td>
+          <td>Clothes</td>
+          <td>EGP90/day</td>
+          <td>EGP300</td>
+
+        <td class="actions">
+            <button class="edit-btn"><img src="../photos/edit.png" alt="Edit" /></button>
+            <button class="delete-btn"><img src="../photos/trash.png" alt="Delete" /></button>
+          <button class="view">view</button>
+        </td>
+        </tr>
+         <tbody id="userTable">
+        <tr>
+          <td>#AP003</td>
+          <td>Yamaha F310 Guitar</td>
+          <td>Admin 1</td>
+          <td>Musical Instruments</td>
+          <td>EGP80/week</td>
+          <td>EGP400</td>
+
+        <td class="actions">
+            <button class="edit-btn"><img src="../photos/edit.png" alt="Edit" /></button>
+            <button class="delete-btn"><img src="../photos/trash.png" alt="Delete" /></button>
+          <button class="view">view</button>
+        </td>
+        </tr>
+
+        <tbody id="userTable">
+        <tr>
+          <td>#AP004</td>
+          <td>Camping Tent</td>
+          <td>Admin 2</td>
+          <td>Tools</td>
+          <td>EGP40/day</td>
+          <td>EGP250</td>
+
+        <td class="actions">
+            <button class="edit-btn"><img src="../photos/edit.png" alt="Edit" /></button>
+            <button class="delete-btn"><img src="../photos/trash.png" alt="Delete" /></button>
+          <button class="view"  onclick="window.location.href='../../../../pages/products/tools/tent/tent.html'">view</button>
+        </td>
+        </tr>
+
+        <tbody id="userTable">
+        <tr>
+          <td>#AP005</td>
+          <td>Professional Drone</td>
+          <td>Admin 2</td>
+          <td>Electronics</td>
+          <td>EGP200/day</td>
+          <td>EGP250</td>
+
+        <td class="actions">
+            <button class="edit-btn"><img src="../photos/edit.png" alt="Edit" /></button>
+            <button class="delete-btn"><img src="../photos/trash.png" alt="Delete" /></button>
+          <button class="view" onclick="window.location.href='../../../../pages/products/electronics/professional-drone/professional-drone.html'">view</button>
+        </td>
+        </tr>
+
+        <tbody id="userTable">
+        <tr>
+          <td>#AP006</td>
+          <td>Mountain Bike</td>
+          <td>Admin 1</td>
+          <td>Tools</td>
+          <td>EGP70/day</td>
+          <td>EGP150</td>
+
+        <td class="actions">
+            <button class="edit-btn"><img src="../photos/edit.png" alt="Edit" /></button>
+            <button class="delete-btn"><img src="../photos/trash.png" alt="Delete" /></button>
+          <button class="view" onclick="window.location.href='../../../../pages/products/tools/bike/bike.html'">view</button>
+        </td>
+        </tr>
+       </tbody>
+   </table>
+
+          <!-- pagination -->
+  <div class="pagination">
+      <button class="prev">Previous</button>
+      <button class="active">1</button>
+      <button>2</button>
+      <button class="prev">Next</button>
+    </div>
+   </div>
+
+
+  <script>
+    //  delete action
+    document.querySelectorAll('.delete-btn').forEach(btn => {
+      btn.addEventListener('click', function(){
+        this.closest('tr').remove();
+      });
+    });
+  </script>
+ 
+<script src="../../lang.js"></script>
+</body>
+</html>

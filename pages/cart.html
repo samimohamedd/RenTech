@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Renturn</title>
+  <link rel="stylesheet" href="../CSS/cart.css"/>
+  <link rel="icon" href="./photos/renturn logo.png" type="image.png">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+  <link rel="stylesheet" href="../CSS/responsive.css">
+</head>
+<body>
+  <!-- Header -->
+  <header id="header">
+    <div class="container">
+      <div class="logo"><img src="../photos/renturn logo.png" alt="logo"></div>
+      <div class="search">
+        <input  type="text" id="search" placeholder="Search for a product" />
+        <p id="error">⚠️ Please enter a category name</p>
+        <i class="fa-solid fa-search" onclick="validateSearch()"></i>
+      </div>
+      <nav>
+        <div class="nav-v">
+        <a href="../index.html">Home</a>
+        <a href="./about.html">About Us</a>
+        <!-- Dropdown Categories -->
+        <div class="dropdown">
+          <button class="dropbtn">Categories ▾</button>
+          <div class="dropdown-content">
+            <a href="./electronics.html">Electronics</a>
+            <a href="./tools.html">Tools</a>
+            <a href="./clothes.html">Clothes</a>
+            <a href="./music.html">Musical instruments</a>
+          </div>
+        </div>
+        </div>
+
+      <button class="nav-btn" onclick="window.location.href='./cart.html'">
+       <i class="fa-solid fa-cart-shopping"></i>
+      </button>
+
+    <button class="nav-btn" onclick="window.location.href='./signin.html'">
+     <i class="fa-solid fa-user"></i>
+    </button>
+
+      <button class="nav-btn" id="langToggle" >
+        <i class="fa-solid fa-globe"></i>
+      </button>
+
+      </nav>
+    </div>
+  </header>
+  <br><br><br><br><br><br><br>
+
+    <main class="container">
+        <section class="checkout-progress">
+            <ol class="progress-steps">
+                <li class="active">
+                    <div class="step-number">1</div>
+                    <span>Cart</span>
+                </li>
+                <li>
+                    <div class="step-number">2</div>
+                    <span>Checkout</span>
+                </li>
+                <li>
+                    <div class="step-number">3</div>
+                    <span>Payment</span>
+                </li>
+                <li>
+                    <div class="step-number">4</div>
+                    <span>Confirmation</span>
+                </li>
+            </ol>
+        </section>
+
+        <section class="cart-section">
+            <div class="cart-items">
+                <h2>Your Cart</h2>
+
+                <article class="cart-item">
+                    <img src="../photos/drill.png" alt="Electric Drill">
+                    <div class="item-details">
+                        <h3>Professional Electric Drill</h3>
+                        <p class="item-meta"><i class="fas fa-calendar-days"></i> Jan 16 - Jan 22</p>
+                        <div class="item-actions">
+                            <a href="#" class="edit">Edit</a>
+                            <a href="#" class="remove">Remove</a>
+                        </div>
+                    </div>
+                    <div class="item-price">
+                        <p class="price">$45.00</p>
+                        <p class="duration">per week</p>
+                    </div>
+                </article>
+
+                <article class="cart-item">
+                    <img src="../photos/Camera.jpeg" alt="Camera">
+                    <div class="item-details">
+                        <h3>Camera</h3>
+                        <p class="item-meta"><i class="fas fa-calendar-days"></i> Jan 16 - Jan 21</p>
+                        <div class="item-actions">
+                            <a href="#" class="edit">Edit</a>
+                            <a href="#" class="remove">Remove</a>
+                        </div>
+                    </div>
+                    <div class="item-price">
+                        <p class="price">$35.00</p>
+                        <p class="duration">for x days</p>
+                    </div>
+                </article>
+
+                <div class="cart-footer">
+                    <div class="subtotal">
+                        Subtotal: <span>$80.00</span>
+                    </div>
+                    <a href="../pages/checkout.html" class="checkout-btn">Proceed to Checkout &rarr;</a>
+                </div>
+            </div>
+
+            <aside class="order-summary">
+                <h2>Order Summary</h2>
+                <div class="summary-items">
+                    <div class="summary-item">
+                        <div class="item-info">
+                            <img src="../photos/drill.png" alt="Electric Drill">
+                            <span class="summary-item-name">Electric Drill</span>
+                        </div>
+                        <span class="summary-item-price">45.00 EGP</span>
+                    </div>
+                    <div class="summary-item">
+                        <div class="item-info">
+                            <img src="../photos/Camera.jpeg" alt="Camera">
+                            <span class="summary-item-name">Camera</span>
+                        </div>
+                        <span class="summary-item-price">35.00 EGP</span>
+                    </div>
+                </div>
+                <div class="summary-totals">
+                    <div class="summary-line">
+                        <span>Subtotal</span>
+                        <span>80.00 EGP</span>
+                    </div>
+                    <div class="summary-line">
+                        <span>Delivery Fee</span>
+                        <span>17.20 EGP</span>
+                    </div>
+                    <div class="summary-line total">
+                        <span>Total</span>
+                        <span>97.20 EGP</span>
+                    </div>
+                </div>
+                <p class="estimated-delivery">
+                    <i class="fas fa-truck"></i> Estimated delivery: 2-3 business days
+                </p>
+            </aside>
+        </section>
+    </main>
+
+   <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="footer-container">
+
+      <!-- Logo + icons -->
+      <div class="footer-section">
+        <img src="../photos/Rectangle 17.png" alt="Renturn Logo" class="logo">
+       
+        <p>Your trusted partner for quality tool<br> and equipment rentals.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./about.html">About Us</a></li>
+          <li><a href="./privacypolicy.html">Privacy Policy</a></li>
+          <li><a href="./termsandconditions.html">Terms and Conditions</a></li>
+        </ul>
+      </div>
+
+      <!-- Account -->
+      <div class="footer-section">
+        <h4>Account</h4>
+        <ul>
+          <li><a href="../pages/cart.html">Shopping Cart</a></li>
+          <li><a href="../pages/signin.html">My Account</a></li>
+        
+        </ul>
+      </div>
+
+      <!-- Support -->
+      <div class="footer-section">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="./help.html.html">Help Center</a></li>
+          <li><a href="./safety.html.html">Safety Guidelines</a></li>
+          
+        </ul>
+      </div>
+    
+    <!-- Contact Section -->
+   <div class="footer-section">
+        <h4>Contact Us</h4>
+        <ul>
+          <li><img src="../photos/Rectangle 14.png" alt="Phone Icon" class="phone-icon"> +201 123 4567 </li>
+          <li><img src="../photos/mail.png" alt="Email Icon" class="email-icon"> renturner@gmail.com</li>
+          <br><p>follow us on social media</p><br>
+           <div class="social-icons">
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+        </ul>
+      </div>
+      </div>
+
+    <!-- Bottom Section -->
+    <div class="footer-bottom">
+      <div class="payment-icons">
+        <a href="#" aria-label="PayPal"><i class="fab fa-cc-paypal"></i></a>
+        <a href="#" aria-label="Apple Pay"><i class="fab fa-cc-apple-pay"></i></a>
+        <a href="#" aria-label="Visa"><i class="fab fa-cc-visa"></i></a>
+      </div>
+      <p>© 2025 Renturn. All rights reserved.</p>
+    </div>
+  </footer>
+   
+  <script src="../../lang.js"></script>
+  <script src="../js/cart.js"></script>
+</body>
+</html>

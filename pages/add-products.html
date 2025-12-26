@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../CSS/my-products.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="first-prod">
+        <div class="welcome">
+            <h1>Welcome back, <span class="name">Sarah</span>!</h1>
+            <p>Manage your rentals and earnings</p>
+        </div>
+
+        <div class="menu-prod">
+            <a class="menu-icon" onclick="menubtn()"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+            <div class="menu-drop">
+                <p class="menu-item">Add Products</p>
+                <p class="menu-item">My Products</p>
+                <p class="menu-item logout">Logout <i class="fa-solid fa-arrow-right-from-bracket"></i></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="stats">
+
+        <div class="t-earn">
+            <div class="t-earn-left">
+                <p class="stats-p">Total Earnings</p>
+                <p class="stats-no">2,847 EGP</p>
+            </div>
+            <div class="t-earn-right"><i class="fa-solid fa-dollar-sign"></i></div>
+        </div>
+
+        <div class="t-earn">
+            <div class="t-earn-left">
+                <p class="stats-p">Active Rentals</p>
+                <p class="stats-no">12</p>
+            </div>
+            <div class="t-earn-right"><i class="fa-solid fa-handshake"></i></div>
+        </div>
+
+        <div class="t-earn">
+            <div class="t-earn-left">
+                <p class="stats-p">My Products</p>
+                <p class="stats-no">8</p>
+            </div>
+            <div class="t-earn-right"><i class="fa-solid fa-layer-group"></i></div>
+        </div>
+
+    </div>
+
+    <div class="main-prod">
+        <div class="prod-left">
+
+            <div class="p-box">
+
+                <div class="info-icon"><i class="fa-solid fa-user"></i></div>
+
+                <h1>Personal Information</h1>
+
+                <div class="p-info">
+                    <p class="info-title">Full Name</p>
+                    <p class="info-info">Sarah Amr</p>
+                </div>
+
+                <div class="p-info">
+                    <p class="info-title">Full Name</p>
+                    <p class="info-info">Sarah Amr</p>
+                </div>
+
+                <div class="p-info">
+                    <p class="info-title">Full Name</p>
+                    <p class="info-info">Sarah Amr</p>
+                </div>
+
+                <div class="p-info">
+                    <p class="info-title">Full Name</p>
+                    <p class="info-info">Sarah Amr</p>
+                </div>
+
+                <a href="" class="stat-btn"><i class="fa-solid fa-pen-to-square"></i> Edit Profile</a>
+
+            </div>
+
+            <div class="p-box-2">
+
+                <h1>Payment Method</h1>
+
+                <div class="box-grey">
+                    <div class="grey-left">
+                        <div class="grey-img">
+                            <img src="./img/visa.png" alt="visa">
+                        </div>
+
+                        <div class="grey-info">
+                            <p class="grey-title">9875 6518</p>
+                            <p class="grey-info"> Expires 12/25</p>
+                        </div>
+                    </div>
+
+                    <p class="grey-right">Primary</p>
+                </div>
+
+                <a href="" class="stat-btn">+ Add Payment Method</a>
+            </div>
+
+            <div class="p-box-2">
+
+                <h1>Recent Activity</h1>
+
+                <div class="box-grey box-cyan">
+                    <div class="grey-title-time">
+                        <p class="grey-tt">New rental request</p>
+                        <p class="grey-time">2 hours ago</p>
+                    </div>
+
+                    <p class="grey-cont">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, ratione.
+                    </p>
+                </div>
+
+                <div class="box-grey box-blue">
+                    <div class="grey-title-time">
+                        <p class="grey-tt">New rental request</p>
+                        <p class="grey-time">2 hours ago</p>
+                    </div>
+
+                    <p class="grey-cont">Iphone-11 pro</p>
+                </div>
+                <a href="" class="stat-btn">See More</a>
+            </div>
+
+        </div>
+
+        <div class="prod-right forms-right">
+            <div class="products-top">
+                <h1 class="products-title">Add New Rental Product</h1>
+            </div>
+
+            <!-- ---------------------------------------- form ---------------------------------------- -->
+
+            <form action="" id="prod-formm">
+                <div class="all-forms">
+                    <div class="form-1">
+                        <h3 class="form-title">Product details</h3>
+
+                        <div class="inside-form-1">
+                            <div class="form-inputs">
+                                <label for="pTitle" class="prod-label">Product Title</label>
+                                <input type="text" name="pTitle" placeholder="e.g. Canon EOS 90D Camera">
+                            </div>
+
+                            <div class="form-inputs">
+                                <label for="category" class="prod-label">Product Title</label>
+                                <select name="category" id="">
+                                    <option value="" disabled selected>Select Category</option>
+                                    <option value="">hammer</option>
+                                    <option value="">car</option>
+                                </select>
+                            </div>
+
+                            <div class="form-inputs">
+                                <label for="condition" class="prod-label">Condition</label>
+                                <select name="condition" id="">
+                                    <option value="" disabled selected>Select Category</option>
+                                    <option value="">New</option>
+                                    <option value="">Like New</option>
+                                    <option value="">Used</option>
+                                </select>
+                            </div>
+
+                            <div class="form-inputs text-area">
+                                <label for="description" class="prod-label">Product Title</label>
+                                <textarea name="description" id=""
+                                    placeholder="Describe the product condition, features, and any special instructions..."></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-1">
+                        <h3 class="form-title">Pricing & Availablity</h3>
+
+                        <div class="inside-form-1">
+                            <div class="form-inputs">
+                                <label for="rPrice" class="prod-label">Rental Price</label>
+                                <div class="r-price">
+                                    <div class="egp">EGP</div>
+                                    <div class="input-r-border">
+                                        <input type="text" name="rPrice" placeholder="200">
+                                    </div>
+
+                                    <select name="period" id="period">
+                                        <option value="">per day</option>
+                                        <option value="">per month</option>
+                                        <option value="">per hour</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-inputs">
+                                <label for="category" class="prod-label">Insurance/Deposit Amount</label>
+                                <div class="r-price">
+                                    <div class="egp">EGP</div>
+
+                                    <input type="text" name="rPrice" placeholder="500">
+                                </div>
+                                <p class="insurance">Refundable security deposit</p>
+                            </div>
+
+                            <div class="form-inputs">
+                                <label for="date-from" class="prod-label">Available From</label>
+                                <input type="date" name="date-from">
+                            </div>
+
+                            <div class="form-inputs">
+                                <label for="date-until" class="prod-label">Available Until</label>
+                                <input type="date" name="date-until">
+                            </div>
+
+                            <div class="form-inputs loc-grid">
+                                <label for="location" class="prod-label">Location</label>
+                                <div class="location-div">
+                                    <input type="text" name="location" class="location-input"
+                                        placeholder=" e.g. Nasr City, Cairo">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="form-1">
+                        <h3 class="form-title">Product Images</h3>
+
+                        <div class="img-form">
+                            <h3 class="required-title">Main Image (Required)</h3>
+
+                            <p class="required-p">This will appear in product listings and search results</p>
+
+                            <div class="upload-main-img">
+                                <div class="cam-icon">
+                                    <i class="fa-solid fa-camera"></i>
+                                </div>
+
+                                <h3>Upload Main Image</h3>
+
+                                <p>Drag and drop or click to browse</p>
+
+                                <label for="prod-img-in" class="img-input">Choose File</label>
+                                <input type="file" accept="image/*" id="prod-img-in" hidden>
+
+                                <div class="view-img-container">
+                                    <img src="" alt="" class="view-img">
+                                    <div class="x-btn"><i class="fa-solid fa-xmark"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="save-form">
+                        <button type="reset" class="cancel-btn" onclick="clearForm()">Cancel</button>
+                        <button type="submit" class="save-btn">Save & Publish</button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+
+    <script>
+        let menu = document.querySelector(".menu-drop");
+
+        function menubtn() {
+            menu.classList.toggle("visible")
+        }
+
+
+
+        var input = document.getElementById("prod-img-in");
+        var preview = document.querySelector(".view-img");
+        var previewBox = document.querySelector(".view-img-container");
+        var removeBtn = document.querySelector(".x-btn");
+
+        input.addEventListener("change", function () {
+            var file = input.files[0];
+            if (!file) return;
+
+            var url = URL.createObjectURL(file);
+            preview.src = url;
+            previewBox.style.visibility = "visible";
+        });
+
+        removeBtn.addEventListener("click", function () {
+            preview.src = "";
+            previewBox.style.visibility = "hidden";
+            input.value = "";
+        });
+
+
+
+        var form = document.getElementById("prod-formm")
+
+        function clearForm() {
+            var preview = document.querySelector(".view-img");
+            var previewBox = document.querySelector(".view-img-container");
+
+            preview.src = "";
+            previewBox.style.visibility = "hidden";
+        }
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rentals Management</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="../photos/R logo.png">
+    <link rel="stylesheet" href="../css/activerentals.css">
+    <link rel="stylesheet" href="../CSS/responsive.css">
+</head>
+<body>
+      <header id="header">
+        <div class="container">
+          <div class="logo"><img src="../photos/renturn logo.png" alt="logo"></div>
+          
+          <nav>
+            <div class="nav-v">         
+              <a href="../index.html">Home</a>
+              <a href="../pages/about.html">About Us</a>
+              <!-- Dropdown Categories -->
+              <div class="dropdown">
+                <button class="dropbtn">Categories ▾</button>
+                <div class="dropdown-content">
+                  <a href="../pages/electronics.html">Electronics</a>
+                  <a href="../pages/tools.html">Tools</a>
+                  <a href="../pages/clothes.html">Clothes</a>
+                  <a href="../pages/music.html">Musical instruments</a>
+                </div>
+              </div>
+            </div>
+            <button class="nav-btn" onclick="window.location='../pages/cart.html'">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+            <button class="nav-btn" onclick="window.location='../pages/login.html'">
+              <i class="fa-solid fa-user"></i>
+            </button>
+
+            <button class="nav-btn" id="langToggle" >
+              <i class="fa-solid fa-globe"></i>
+            </button>
+          </nav>
+        </div>
+      </header>
+
+    <!-- Sidebar -->
+  <div class="sidebar">
+<div class="profile-container">
+    <img src="../photos/adminprofile.png" alt="Admin Profile" class="admin-profile">
+<h3>Admin Profile</h3>
+<p>Full Name :</p>
+<b>Sarah Amr</b> 
+<p>Email :</p>
+<b>📧 sara@email.com</b>
+<p>Phone No. :</p>
+<b>📞 +20 100 715 519</b>
+
+<button class="edit"><img src="../photos/svg.png" alt="Edit Profile" /> Edit Profile</button>
+<button class="logout"><img src="../photos/Vector.png" alt="Logout" /> Logout</button>
+
+</div>
+<div class="menu">
+<a href="../pages/adminpage.html" ><img src="../photos/users-icon.png" alt="users-icon"> Users</a>
+<a href="../pages/catemanagement.html"><img src="../photos/categories-icon.png" alt="categories-icon"> Categories</a>
+<a href="../pages/userproductsman.html"><img src="../photos/products-icon.png" alt="products-icon"> Products</a>
+<a href="../pages/paymentman.html"><img src="../photos/payment-icon.png" alt="payment-icon"> Payment Methods</a>
+<a href="../pages/activerentals.html" class="active"><img src="../photos/activerentals.png" alt="active-rentals-icon"> Active Rentals</a>
+</div>
+</div>
+
+<!-- Main Content -->
+  <div class="main">
+    <div class="topbar">
+      <h2>Rentals Management</h2>
+      
+    </div>
+
+    <div class="stats">
+      <div class="stat">
+        <div style="display: flex; flex-direction: column;">
+          <p>Total Rentals</p>
+          <h3>5</h3>
+        </div>
+        <img src="../photos/totalrentals.png" alt="">
+      </div>
+      <div class="stat">
+        <div style="display: flex; flex-direction: column;">
+          <p>Admin products</p>
+          <h3>2</h3>
+        </div>
+        <img src="../photos/admins.png" alt="users-icon">
+      </div>
+      <div class="stat">
+        <div style="display: flex; flex-direction: column;">
+          <p>Active Rentals</p>
+          <h3>4</h3>
+        </div>
+        <img src="../photos/activerental.png" alt="">
+      </div>
+      <div class="stat">
+        <div style="display: flex; flex-direction: column;">
+          <p>completed Rentals</p>
+          <h3>1</h3>
+        </div>
+        <img src="../photos/activeusers.png" alt="">
+      </div>
+    </div>
+
+  <!-- users-toolbar -->
+  <div class="users-toolbar">
+    <h3>Rentals List</h3>
+    <div class="search-box">
+         <input type="text" placeholder="Search for Rental" />
+        <i class="fa-solid fa-search"></i>
+      </div>
+              <div class="dropdown-filter">
+         <button class="filterbtn"><img src="../photos/filter.png" alt="">Filter</button>
+          <div class="dropdown-content-filter">
+            <a>active</a>
+            <a>completed</a>
+            </div>
+    </div>
+  </div>
+  <!-- users-table -->
+   <table>
+      <thead>
+        <tr>
+          <th>Rental ID</th>
+          <th>Product Name</th>
+          <th>Renter Name</th>
+          <th>Owner Name</th>
+          <th>Start Date</th>
+          <th>End Date</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+       <tbody id="userTable">
+        <tr>
+          <td data-label="Rental ID">#R001</td>
+          <td data-label="Product Name">Canon EOS R5 Camera</td>
+          <td data-label="Renter Name">Sarah Wilson</td>
+          <td data-label="Owner Name">Mike Johnson</td>
+          <td data-label="Start Date">4/9/2025</td>
+          <td data-label="End Date">12/9/2025</td>
+          <td data-label="Status" class="status active">
+            <button class="active-button">Active</button>
+        </td>
+        <td class="actions">
+           <button class="view">view Details</button>
+            <button class="delete-btn">End Rental</button>
+        </td>
+        </tr>
+
+         <tr>
+          <td>#002</td>
+          <td>DJI Mavic Air 2 Drone</td>
+          <td>Mike Johnson</td>
+          <td>Alex Miller</td>
+          <td>4/8/2025</td>
+          <td>12/8/2025</td>
+          <td class="status active">
+            <button class="active-button">active</button>
+        </td>
+        <td class="actions">
+            <button class="view">view  Details</button>
+            <button class="delete-btn">End Rental</button>
+
+        </td>
+        </tr>
+         <tr>
+          <td>#R003</td>
+          <td>Yamaha F310 Guitar</td>
+          <td>Rachel Martinez</td>
+          <td>Jane Smith</td>
+            <td>15/8/2025</td>
+          <td>22/8/2025</td>
+          <td class="status active">
+            <button class="active-button">Active</button>
+        </td>
+        <td class="actions">
+           <button class="view">view  Details</button>
+            <button class="delete-btn">End Rental</button>
+        </td>
+        </tr>
+
+         <tr>
+          <td>#R004</td>
+          <td>Black+Decker Hammer</td>
+          <td>William Smith</td>
+          <td>Alex Miller</td>
+          <td>10/8/2025</td>
+          <td>20/8/2025</td>
+          <td class="status active">
+            <button class="active-button">Active</button>
+        </td>
+        <td class="actions">
+            <button class="view">view  Details</button>
+            <button class="delete-btn">End Rental</button>
+
+        </td>
+        </tr>
+
+         <tr>
+          <td>#R005</td>
+          <td>Black blesser</td>
+          <td>Sarah Wilson</td>
+          <td>Laila Ahmed</td>
+           <td>8/9/2025</td>
+          <td>17/8/2025</td>
+          <td class="status active">
+            <button class="completed-button">Completed</button>
+        </td>
+        <td class="actions">
+           <button class="view">view  Details</button> 
+            <button class="delete-btn">End Rental</button>
+        </td>
+        </tr>
+
+         <tr>
+          
+
+      </tbody>
+  </table>
+     <!-- pagination -->
+  <div class="pagination">
+      <button class="prev">Previous</button>
+      <button class="active">1</button>
+      <button>2</button>
+      <button>3</button>
+      <button class="prev">Next</button>
+    </div>
+   </div>
+
+
+  <script>
+    //  delete action
+    document.querySelectorAll('.delete-btn').forEach(btn => {
+      btn.addEventListener('click', function(){
+        this.closest('tr').remove();
+      });
+    });
+  </script>
+ <script src="../../lang.js"></script>
+</body>
+</html>

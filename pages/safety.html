@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Renturn - Safety Guidelines</title>
+  <link rel="stylesheet" href="../CSS/safety.css.css"/>
+  <link rel="icon" href="./photos/R logo.png" type="image.png">
+  <link rel="stylesheet" href="../CSS/responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+</head>
+<body>
+<!-- Header -->
+  <header id="header">
+    <div class="container">
+      <div class="logo"><img src="../photos/renturn logo.png" alt="logo"></div>
+      <div class="search">
+        <input  type="text" id="search" placeholder="Search for a product" />
+        <p id="error">⚠️ Please enter a category name</p>
+        <i class="fa-solid fa-search" onclick="validateSearch()"></i>
+      </div>
+      <nav>
+        <div class="nav-v">
+        <a href="../index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <!-- Dropdown Categories -->
+        <div class="dropdown">
+          <button class="dropbtn">Categories ▾</button>
+          <div class="dropdown-content">
+            <a href="./electronics.html">Electronics</a>
+            <a href="./tools.html">Tools</a>
+            <a href="./clothes.html">Clothes</a>
+            <a href="./music.html">Musical instruments</a>
+          </div>
+        </div>
+        </div>
+
+      <button class="nav-btn" onclick="window.location.href='./cart.html'">
+  <i class="fa-solid fa-cart-shopping"></i>
+</button>
+
+<button class="nav-btn" onclick="window.location.href='./signin.html'">
+  <i class="fa-solid fa-user"></i>
+</button>
+
+      <button class="nav-btn" id="langToggle" >
+        <i class="fa-solid fa-globe"></i>
+      </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== Page Content ===== -->
+<main class="page">
+    
+    <section class="hero">
+      <h1>Safety Guidelines</h1>
+      <p>Your safety is our priority. Together, we create a trusted community where everyone can rent with confidence.</p>
+    </section>
+    
+
+    <!-- Shared Responsibility -->
+     <div class="container-box">
+    <section class="card-wrap">
+      <h2 class="section-title">Our Shared Responsibility</h2>
+      <p class="section-subtitle">Welcome to the Renturn community, where trust and safety come first</p>
+      <div class="grid grid-3">
+        <article class="card">
+          <div class="icon"><i class="fa-solid fa-users"></i></div>
+          <h3>Community First</h3>
+          <p>We’re building a community where everyone looks out for each other’s safety and well-being.</p>
+        </article>
+        <article class="card">
+          <div class="icon"><i class="fa-solid fa-handshake"></i></div>
+          <h3>Shared Responsibility</h3>
+          <p>Both owners and renters play crucial roles in maintaining safety standards across all rentals.</p>
+        </article>
+        <article class="card">
+          <div class="icon"><i class="fa-solid fa-file-signature"></i></div>
+          <h3>Agreement</h3>
+          <p>By using Renturn, you agree to prioritize safety in every rental transaction.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Universal Safety Principles -->
+    <section class="card-wrap">
+      <h2 class="section-title">Universal Safety Principles</h2>
+      <div class="grid grid-3">
+        <article class="card"><div class="icon"><i class="fa-solid fa-magnifying-glass"></i></div><h3>Inspection is Mandatory</h3><p>Thoroughly inspect items before and after rental. Document any pre-existing damage with photos or video.</p></article>
+        <article class="card"><div class="icon"><i class="fa-solid fa-pump-soap"></i></div><h3>Hygiene & Cleanliness</h3><p>Items must be clean and sanitized. Return them in the same condition minus normal wear and tear.</p></article>
+        <article class="card"><div class="icon"><i class="fa-solid fa-circle-check"></i></div><h3>Proper Use</h3><p>Use items only for their intended purpose. Read all provided instructions carefully.</p></article>
+        <article class="card"><div class="icon"><i class="fa-solid fa-shield-halved"></i></div><h3>Safe Environment</h3><p>Use items in appropriate, safe, and dry environments suitable for the equipment.</p></article>
+        <article class="card"><div class="icon"><i class="fa-solid fa-eye"></i></div><h3>Supervision</h3><p>Never leave electrical, mechanical, or children’s items unattended while in use.</p></article>
+        <article class="card"><div class="icon"><i class="fa-solid fa-children"></i></div><h3>Children & Pets</h3><p>Exercise extreme caution. Many items are not toys and can pose serious hazards.</p></article>
+      </div>
+    </section>
+
+    <!-- Category-Specific -->
+    <section class="card-wrap">
+      <h2 class="section-title">Category-Specific Safety Guidelines</h2>
+      <div class="grid grid-2">
+        <article class="card"><div class="icon"><i class="fa-solid fa-plug"></i></div><h3>Electronics & Appliances</h3><ul class="list"><li>Keep away from water and moisture</li><li>Check electrical cords for damage before use</li><li>Handle Li-ion batteries with care; avoid overheating</li><li>Be aware of heat generation during operation</li></ul></article>
+        <article class="card"><div class="icon"><i class="fa-solid fa-shirt"></i></div><h3>Clothing & Textiles</h3><ul class="list"><li>Keep away from open flames and heat sources</li><li>Avoid sharp objects that may cause snagging</li><li>Use stain protection when appropriate</li><li>Store formal wear on padded hangers</li></ul></article>
+        <article class="card"><div class="icon"><i class="fa-solid fa-cake-candles"></i></div><h3>Event & Party Supplies</h3><ul class="list"><li>Respect weight limits for tables and chairs</li><li>Follow assembly instructions for structures</li><li>Properly secure all decorations</li><li>Manage cables and linens to prevent trips</li></ul></article>
+        <article class="card"><div class="icon"><i class="fa-solid fa-screwdriver-wrench"></i></div><h3>Tools & Equipment</h3><ul class="list"><li>Always wear appropriate PPE (gloves, goggles, masks)</li><li>Ensure proper training before use</li><li>Properly secure work pieces</li><li>Read all safety manuals thoroughly</li></ul></article>
+      </div>
+    </section>
+
+    <!-- Responsibilities -->
+    <section class="card-wrap">
+      <h2 class="section-title">Responsibilities</h2>
+      <div class="grid grid-2">
+        <article class="card"><div class="icon"><i class="fa-solid fa-user-shield"></i></div><h3>Owner’s Responsibility</h3><ul class="list"><li><strong>Accurate Listings</strong> — Honestly represent item condition, age, and functionality</li><li><strong>Full Disclosure</strong> — Clearly disclose any known flaws or safety considerations</li><li><strong>Provide Instructions</strong> — Include manuals or clear safety operation instructions</li></ul></article>
+        <article class="card"><div class="icon"><i class="fa-solid fa-user-check"></i></div><h3>Renter’s Responsibility</h3><ul class="list"><li><strong>Ask Questions</strong> — Contact Renturn if instructions are unclear before use</li><li><strong>Use Common Sense</strong> — Stop using immediately if something feels unsafe</li><li><strong>Report Issues</strong> — Report malfunctions to Renturn immediately</li></ul></article>
+      </div>
+    </section>
+
+    <!-- Emergency -->
+    <section class="card-wrap">
+      <h2 class="section-title">Emergency Situations</h2>
+      <div class="grid grid-3">
+        <article class="card"><div class="icon"><i class="fa-solid fa-kit-medical"></i></div><h3>Injury</h3><p>Seek medical attention first. Then contact owner and Renturn support.</p></article>
+        <article class="card"><div class="icon"><i class="fa-solid fa-bolt"></i></div><h3>Fire/Electrical</h3><p>Power off safely if possible. Evacuate and call emergency services.</p></article>
+        <article class="card"><div class="icon"><i class="fa-solid fa-triangle-exclamation"></i></div><h3>Damaged Item</h3><p>Stop using immediately. Contact Renturn to report the issue.</p></article>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="footer-container">
+
+      <!-- Logo + icons -->
+      <div class="footer-section">
+        <img src="../photos/Rectangle 17.png" alt="Renturn Logo" class="logo">
+       
+        <p>Your trusted partner for quality tool<br> and equipment rentals.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./about.html">About Us</a></li>
+          <li><a href="./privacypolicy.html">Privacy Policy</a></li>
+          <li><a href="./termsandconditions.html">Terms and Conditions</a></li>
+        </ul>
+      </div>
+
+      <!-- Account -->
+      <div class="footer-section">
+        <h4>Account</h4>
+        <ul>
+          <li><a href="../pages/cart.html">Shopping Cart</a></li>
+          <li><a href="../pages/signin.html">My Account</a></li>
+        
+        </ul>
+      </div>
+
+      <!-- Support -->
+      <div class="footer-section">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="./help.html">Help Center</a></li>
+          <li><a href="./safety.html">Safety Guidelines</a></li>
+          
+        </ul>
+      </div>
+    
+    <!-- Contact Section -->
+   <div class="footer-section">
+        <h4>Contact Us</h4>
+        <ul>
+          <li><img src="../photos/Rectangle 14.png" alt="Phone Icon" class="phone-icon"> +201 123 4567 </li>
+          <li><img src="../photos/mail.png" alt="Email Icon" class="email-icon"> renturner@gmail.com</li>
+          <br><p>follow us on social media</p><br>
+           <div class="social-icons">
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+        </ul>
+      </div>
+      </div>
+
+    <!-- Bottom Section -->
+    <div class="footer-bottom">
+      <div class="payment-icons">
+        <a href="#" aria-label="PayPal"><i class="fab fa-cc-paypal"></i></a>
+        <a href="#" aria-label="Apple Pay"><i class="fab fa-cc-apple-pay"></i></a>
+        <a href="#" aria-label="Visa"><i class="fab fa-cc-visa"></i></a>
+      </div>
+      <p>© 2025 Renturn. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../../lang.js"></script>
+</body>
+</html>
+

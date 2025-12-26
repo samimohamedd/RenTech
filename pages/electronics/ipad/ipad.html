@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Renturn</title>
+        <link rel="stylesheet" href="../../../../css/style.css" />
+        <link
+            rel="icon"
+            href="../../../../photos/R logo.png"
+            type="image.png"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        />
+        <link rel="stylesheet" href="../../products-styling.css">
+        <link rel="stylesheet" href="../../products-responsive.css">
+        <link rel="stylesheet" href="../../../../CSS/responsive.css">
+    </head>
+
+    <body>
+        <header id="header">
+            <div class="container">
+                <div class="logo">
+                    <img src="../../../../photos/renturn logo.png" alt="logo" />
+                </div>
+                <div class="search">
+                    <input
+                        type="text"
+                        id="search"
+                        placeholder="Search for a product"
+                    />
+                    <p id="error">⚠️ Please enter a category name</p>
+                    <i
+                        class="fa-solid fa-search"
+                        onclick="validateSearch()"
+                    ></i>
+                </div>
+                <nav>
+                    <div class="nav-v">
+                        <a href="../../../../index.html">Home</a>
+                        <a href="../../../about.html">About Us</a>
+                        <!-- Dropdown Categories -->
+                        <div class="dropdown">
+                            <button class="dropbtn">Categories ▾</button>
+                            <div class="dropdown-content">
+                                <a href="../../../electronics.html"
+                                    >Electronics</a
+                                >
+                                <a href="../../../tools.html">Tools</a>
+                                <a href="../../../clothes.html">Clothes</a>
+                                <a href="../../../music.html"
+                                    >Musical instruments</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+
+                    <button
+                        class="nav-btn"
+                        onclick="window.location.href='../../../cart.html'"
+                    >
+                        <div class="cart-box">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <div id="count">0</div>
+                        </div>
+                    </button>
+
+                    <button
+                        class="nav-btn"
+                        onclick="window.location.href='../../../login.html'"
+                    >
+                        <i class="fa-solid fa-user"></i>
+                    </button>
+                </nav>
+            </div>
+        </header>
+        <br /><br /><br /><br />
+
+        <main>
+            <div class="details-main">
+                <div class="product-details">
+                    <a href="../../../electronics.html">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </a>
+                    <p>Product Details</p>
+                </div>
+
+                <div>
+                    <div class="product-box">
+                        <div>
+                            <div class="condition">
+                                <p>Electronics</p>
+                                <p>Available</p>
+                                <p>Like New</p>
+                            </div>
+
+                            <div>
+                                <p class="product-name">Ipad air 5</p>
+                                <div class="stars">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <span>(24 reviews)</span>
+                                </div>
+                            </div>
+
+                            <div class="price-box">
+                                <p>150EGP</p>
+                                <span>per day</span>
+                            </div>
+                            <div class="availability">
+                                <p class="h">Availability</p>
+                                <div class="date">
+                                    <div>
+                                        <p>From</p>
+                                        <p class="date-box">Jan 15, 2025</p>
+                                    </div>
+                                    <div>
+                                        <p>To</p>
+                                        <p class="date-box">Mar 30, 2025</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="product-location">
+                                <p>Location</p>
+                                <div>
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <span>Downtown Cairo</span>
+                                    <p>
+                                        26 Talaat Harb St., Downtown, Cairo,
+                                        Egypt
+                                    </p>
+                                </div>
+                                <div class="location-map">
+                                    <i class="fa-solid fa-map"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="porduct-img">
+                                <img src="imgs/0.png" alt="ipad" />
+                            </div>
+                            <div class="sm-imgs">
+                                <img
+                                    src="imgs/1.png"
+                                    alt="cable"
+                                    class="sm-img modal-trigger"
+                                />
+                                <img
+                                    src="imgs/2.png"
+                                    alt="power-adapter"
+                                    class="sm-img modal-trigger"
+                                />
+                                <img
+                                    src="imgs/3.png"
+                                    alt="ipad-box"
+                                    class="sm-img modal-trigger"
+                                />
+                                <img
+                                    src="imgs/4.png"
+                                    alt="ipad-case"
+                                    class="sm-img modal-trigger"
+                                />
+
+                                <div class="modal" id="modal">
+                                    <div class="inner-modal">
+                                        <img id="modalImage" src="" alt="" />
+                                        <div>
+                                            <i
+                                                class="fa-solid fa-xmark close-icon"
+                                                id="closeModal"
+                                            ></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-div">
+                        <button type="submit" class="add-to-cart">
+                            Add to cart
+                        </button>
+                    </div>
+
+                    <div class="description-div">
+                        <div class="description-box">
+                            <p class="description-h">Description</p>
+                            <div class="description-p">
+                                <p>
+                                    The Apple iPad Air (5th Generation) combines
+                                    sleek design with powerful performance.
+                                    Featuring the Apple M1 chip, it delivers
+                                    fast multitasking, smooth graphics, and
+                                    excellent efficiency, making it perfect for
+                                    work, study, and entertainment. The
+                                    10.9-inch Liquid Retina display with True
+                                    Tone provides vibrant colors and sharp
+                                    details for movies, games, and creative
+                                    tasks. The iPad Air supports the 2nd
+                                    Generation Apple Pencil and Magic Keyboard,
+                                    turning it into a versatile tool for
+                                    note-taking, drawing, and productivity. With
+                                    Touch ID, long battery life, and iPadOS
+                                    features, it offers both security and
+                                    convenience. This unit has been carefully
+                                    maintained and shows minimal signs of use.
+                                </p>
+                            </div>
+
+                            <div>
+                                <p class="included">Included in rental:</p>
+                                <p class="included-p">
+                                    <i class="fa-solid fa-check check-icon"></i>
+                                    USB-C charging cable
+                                </p>
+                                <p class="included-p">
+                                    <i class="fa-solid fa-check check-icon"></i>
+                                    20W USB-C power adapter
+                                </p>
+                                <p class="included-p">
+                                    <i class="fa-solid fa-check check-icon"></i>
+                                    Protective carrying case
+                                </p>
+                                <p class="included-p">
+                                    <i class="fa-solid fa-check check-icon"></i>
+                                    Original packaging
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+       <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="footer-container">
+
+      <!-- Logo + icons -->
+      <div class="footer-section">
+        <img src="../../../../photos/Rectangle 17.png" alt="Renturn Logo" class="logo">
+       
+        <p>Your trusted partner for quality tool<br> and equipment rentals.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="../../../../index.html">Home</a></li>
+          <li><a href="../../../about.html">About Us</a></li>
+          <li><a href="../../../privacypolicy.html">Privacy Policy</a></li>
+          <li><a href="../../../termsandconditions.html">Terms and Conditions</a></li>
+        </ul>
+      </div>
+
+      <!-- Account -->
+      <div class="footer-section">
+        <h4>Account</h4>
+        <ul>
+          <li><a href="../../../cart.html">Shopping Cart</a></li>
+          <li><a href="../../../signin.html">My Account</a></li>
+        </ul>
+      </div>
+
+      <!-- Support -->
+      <div class="footer-section">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="../../../help.html.html">Help Center</a></li>
+          <li><a href="../../../safety.html.html">Safety Guidelines</a></li>
+        </ul>
+      </div>
+    
+    <!-- Contact Section -->
+   <div class="footer-section">
+        <h4>Contact Us</h4>
+        <ul>
+          <li><img src="../../../../photos/Rectangle 14.png" alt="Phone Icon" class="phone-icon"> +201 123 4567 </li>
+          <li><img src="../../../../photos/mail.png" alt="Email Icon" class="email-icon"> renturner@gmail.com</li>
+          <br><p>follow us on social media</p><br>
+           <div class="social-icons">
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+        </ul>
+      </div>
+      </div>
+
+    <!-- Bottom Section -->
+    <div class="footer-bottom">
+      <div class="payment-icons">
+        <a href="#" aria-label="PayPal"><i class="fab fa-cc-paypal"></i></a>
+        <a href="#" aria-label="Apple Pay"><i class="fab fa-cc-apple-pay"></i></a>
+        <a href="#" aria-label="Visa"><i class="fab fa-cc-visa"></i></a>
+      </div>
+      <p>© 2025 Renturn. All rights reserved.</p>
+    </div>
+  </footer>
+        <script src="../../../../js/main.js"></script>
+        <script src="../../products.js"></script>
+    </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reset Password - Renturn</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../CSS/forgetpass.css"/>
+</head>
+<body>
+
+  <div class="reset-container">
+    
+    <!-- Left Side (Image) -->
+    <div class="reset-left">
+      <img src="../photos/Image.png" alt="Illustration">
+    </div>
+
+    <!-- Right Side (Box) -->
+    <div class="reset-right">
+      <div class="reset-box">
+        <span class="close-btn">&times;</span>
+        <h2>Reset Password</h2>
+        <p class="subtitle">Please enter your new password</p>
+
+        <form>
+          <label for="newPassword">New Password</label>
+          <div class="input-group">
+            <i class="fa-solid fa-lock icon"></i>
+            <input type="password" id="newPassword" placeholder="Enter your password">
+            <i class="fa-solid fa-eye toggle"></i>
+          </div>
+          <small class="password-note">* Password must be at least 8 characters, include at least one number, one uppercase letter, and one special character.</small>
+
+          <label for="confirmPassword">Confirm Password</label>
+          <div class="input-group">
+            <i class="fa-solid fa-lock icon"></i>
+            <input type="password" id="confirmPassword" placeholder="Confirm your password">
+            <i class="fa-solid fa-eye toggle"></i>
+          </div>
+
+          <button type="submit" class="reset-btn">Reset Password</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

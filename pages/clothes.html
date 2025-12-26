@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothes</title>
+    <link rel="stylesheet" href="../css/clothes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="../photos/R logo.png">
+    <link rel="stylesheet" href="../CSS/responsive.css">
+  </head>
+<body>
+      <header id="header">
+    <div class="container">
+      <div class="logo"><img src="../photos/renturn logo.png" alt="logo"></div>
+      <div class="search">
+        <input type="text" placeholder="Search for a product" />
+        <i class="fa-solid fa-search"></i>
+      </div>
+      <nav>
+        <div class="nav-v">
+        <a href="../index.html  ">Home</a>
+        <a href="./about.html">About Us</a>
+         <!-- Dropdown Categories -->
+        <div class="dropdown">
+          <button class="dropbtn">Categories ▾</button>
+          <div class="dropdown-content">
+            <a href="./electronics.html">Electronics</a>
+            <a href="./tools.html">Tools</a>
+            <a href="./checkout.html">Clothes</a>
+            <a href="./music.html">Musical instruments</a>
+          </div>
+        </div>
+        </div>
+ 
+      <button class="nav-btn" onclick="window.location='./cart.html'">
+  <i class="fa-solid fa-cart-shopping"></i>
+</button>
+ 
+<button class="nav-btn" onclick="window.location='./signin.html'">
+  <i class="fa-solid fa-user"></i>
+</button>
+ 
+      <button class="nav-btn" id="langToggle" >
+        <i class="fa-solid fa-globe"></i>
+      </button>
+      </nav>
+    </div>
+  </header>
+ <section class="rentals">
+  <div class="rental-top">
+   <button class="clothes-btn"> Clothes </button>
+  <h2>Explore Our Rental Collection</h2>
+  </div>
+  <p>Discover a wide range of clothes available for rent at affordable prices.</p>
+ </section>
+ <!-- products section -->
+  <section class="products">
+      
+    <div class="product-card" data-url="../pages/products/clothes/black-blazer/black-blazer.html">
+    <img src="../photos/black-blazer.jpeg" alt=" Blazer">
+    <h3> Black Blazer</h3>
+    <p>PERFECT FOR Formal Events, Size M\L</p>
+    <span class="price">400EGP/day</span>
+    <button class="rent-btn" onclick="window.location='./cart.html'">Add to Cart</button>
+    </div>
+      
+    <div class="product-card" data-url="../pages/products/clothes/white-dress/white-dress.html">
+    <img src="../photos/download.jpeg" alt="White Dress">
+    <h3>White Dress</h3>
+    <p>For Night Partys, Size L</p>
+    <span class="price">500EGP/day</span>
+    <button class="rent-btn" onclick="window.location='./cart.html'">Add to Cart</button>
+    </div>
+ 
+    <div class="product-card" data-url="../pages/products/clothes/pink-dress/pink-dress.html">
+    <img src="../photos/download (1).jpeg" alt="Pink Dress">
+    <h3>Pink Dress</h3>
+    <p>For Night Partys, Size M.</p>
+    <span class="price">400EGP/day</span>
+    <button class="rent-btn" onclick="window.location='./cart.html'">Add to Cart</button>
+    </div>
+ 
+    <div class="product-card" data-url="../pages/products/clothes/black-dress/black-dress.html">
+    <img src="../photos/black-dress.jpeg" alt="Black dress">
+    <h3>Black dress</h3>
+    <p>For Night Partys and Prom, Size M.</p>
+    <span class="price">700EGP/day</span>
+    <button class="rent-btn" onclick="window.location='./cart.html'">Add to Cart</button>
+    </div>
+   
+   <div class="product-card" data-url="../pages/products/clothes/offwhite-top/offwhite-top.html">
+    <img src="../photos/d80b177d-ac43-45c1-8aec-a2c79d96950c.jpeg" alt="OFF-White Top">
+    <h3>OFF-White Top</h3>
+    <p>A high Quality TOP, Size M.</p>
+    <span class="price">300EGP/day</span>
+    <button class="rent-btn" onclick="window.location='./cart.html'">Add to Cart</button>
+    </div>
+ 
+    <div class="product-card" data-url="../pages/products/clothes/white-chemise/white-chemise.html">
+    <img src="../photos/Women Plain Front Button Long Sleeve Casual Top, Minimalist,Hollowed Costumes,Thanksgiving Women Outfit,Princess Women Costume,Greek Goddess Costume,Cowgirl Women Outfits, Costume.jpeg" alt="White Chemise">
+    <h3>White Chemise 5</h3>
+    <p>For Daily Uses, Size M.</p>
+    <span class="price">200EGP/day</span>
+    <button class="rent-btn" onclick="window.location='./cart.html'">Add to Cart</button>
+    </div>
+ 
+    <div class="product-card" data-url="../pages/products/clothes/skirt/skirt.html">
+    <img src="../photos/skirt.jpeg" alt="Skirt">
+    <h3>Skirt</h3>
+    <p>For Daily Uses, Size M.</p>
+    <span class="price">150EGP/day</span>
+    <button class="rent-btn" onclick="window.location='./cart.html'">Add to Cart</button>
+    </div>
+ 
+     <div class="product-card" data-url="../pages/products/clothes/black-pants/black-pants.html">
+    <img src="../photos/black-pants.jpeg" alt="Black pants">
+    <h3>Black Pants</h3>
+    <p>For Daily Uses, Size M.</p>
+    <span class="price">150EGP/day</span>
+    <button class="rent-btn" onclick="window.location='./cart.html'">Add to Cart</button>
+  </div>
+ 
+
+  </section>
+     <!-- pagination -->
+  <ul class="pagination">
+    <li class="active"><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">...</a></li>
+    
+  </ul>
+ 
+    <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="footer-container">
+
+      <!-- Logo + icons -->
+      <div class="footer-section">
+        <img src="../photos/Rectangle 17.png" alt="Renturn Logo" class="logo">
+       
+        <p>Your trusted partner for quality tool<br> and equipment rentals.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./about.html">About Us</a></li>
+          <li><a href="./privacypolicy.html">Privacy Policy</a></li>
+          <li><a href="./termsandconditions.html">Terms and Conditions</a></li>
+        </ul>
+      </div>
+
+      <!-- Account -->
+      <div class="footer-section">
+        <h4>Account</h4>
+        <ul>
+          <li><a href="./cart.html">Shopping Cart</a></li>
+          <li><a href="./account.html">My Account</a></li>
+        
+        </ul>
+      </div>
+
+      <!-- Support -->
+      <div class="footer-section">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="./help.html.html">Help Center</a></li>
+          <li><a href="./safety.html.html">Safety Guidelines</a></li>
+          
+        </ul>
+      </div>
+    
+    <!-- Contact Section -->
+   <div class="footer-section">
+        <h4>Contact Us</h4>
+        <ul>
+          <li><img src="../photos/Rectangle 14.png" alt="Phone Icon" class="phone-icon"> +201 123 4567 </li>
+          <li><img src="../photos/mail.png" alt="Email Icon" class="email-icon"> renturner@gmail.com</li>
+          <br><p>follow us on social media</p><br>
+           <div class="social-icons">
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+        </ul>
+      </div>
+      </div>
+
+    <!-- Bottom Section -->
+    <div class="footer-bottom">
+      <div class="payment-icons">
+        <a href="#" aria-label="PayPal"><i class="fab fa-cc-paypal"></i></a>
+        <a href="#" aria-label="Apple Pay"><i class="fab fa-cc-apple-pay"></i></a>
+        <a href="#" aria-label="Visa"><i class="fab fa-cc-visa"></i></a>
+      </div>
+      <p>© 2025 Renturn. All rights reserved.</p>
+    </div>
+  </footer>
+ 
+  <script src="../../lang.js"></script>
+  <script src="../js/categories.js"></script> 
+</body>
+</html>
+
+
+
+
+

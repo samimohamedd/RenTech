@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign up - Renturn</title>
+  <link rel="stylesheet" href="../CSS/signup.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main class="main-container">
+    <div class="logo-bg">
+      <img src="../photos/R logo.png" alt="big-logo">
+    </div>
+    <div class="form-container">
+      <h2>Create Account</h2>
+      <p class="subtitle">Join our community and start renting today</p>
+      
+      <form id="signupForm">
+        <div class="name-fields">
+          <div class="input-group">
+            <label>First Name</label>
+            <input type="text" placeholder="First Name"id="firstName" required>
+          </div>
+          <div class="input-group">
+            <label>Last Name</label>
+            <input type="text" placeholder="Last Name" id="lastName" required>
+          </div>
+        </div>
+
+        <div class="input-group">
+          <label>Email Address</label>
+          <input type="email" placeholder="Enter your email" id="email" required>
+          <img src="../photos/5402397_email_inbox_mail_message_envelope_icon.png" alt="email-icon">
+        </div>
+
+        <div class="input-group">
+          <label>National ID</label>
+          <input type="text" placeholder="Enter your National ID" id="nationalID" required>
+          <img src="../photos/285641_id_user_icon.png" alt="ID-icon">
+        </div>
+
+        <div class="input-group">
+          <label>Password</label>
+          <input type="password" placeholder="Enter your Password" id="password" required>
+          <img src="../photos/115716_lock_unlock_password_secure_security_icon.png" alt="Password-icon">
+          <p class="password-note">*Password must be at least 8 characters, include at least one number, one uppercase letter, and one special character (@ , #, _, ..).*</p>
+        </div>
+
+        <div class="input-group">
+          <label>Confirm Password</label>
+          <input type="password" placeholder="Confirm your password" id="confirmPassword" required>
+          <img src="../photos/115716_lock_unlock_password_secure_security_icon.png" alt="Confirm-icon">
+        </div>
+
+        <div class="terms">
+          <label>
+            <input type="checkbox" required>
+            I agree to the <a href="./termsandconditions.html">Terms of Service</a> and
+            <a href="./privacypolicy.html">Privacy Policy</a>
+          </label>
+        </div>
+        <button type="submit">Create Account</button>
+        <p class="signin-link">Already have an account? <a href="./signin.html">Sign in</a></p>
+        <div id="result"></div>
+      </form>
+    </div>
+  </main>
+  <script src="../JS/signup.js"></script>
+</body>
+</html>

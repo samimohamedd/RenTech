@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Renturn</title>
+  <link rel="stylesheet" href="../CSS/electronics.css"/>
+  <link rel="icon" href="./photos/renturn logo.png" type="image.png">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+  <link rel="stylesheet" href="../CSS/responsive.css">
+  
+</head>
+<body>
+  <!-- Header -->
+  <header id="header">
+    <div class="container">
+      <div class="logo"><img src="../photos/renturn logo.png" alt="logo"></div>
+      <div class="search">
+        <input  type="text" id="search" placeholder="Search for a product" />
+        <p id="error">⚠️ Please enter a category name</p>
+        <i class="fa-solid fa-search" onclick="validateSearch()"></i>
+      </div>
+      <nav>
+        <div class="nav-v">
+        <a href="../index.html">Home</a>
+        <a href="./about.html">About Us</a>
+        <!-- Dropdown Categories -->
+        <div class="dropdown">
+          <button class="dropbtn">Categories ▾</button>
+          <div class="dropdown-content">
+            <a href="./electronics.html">Electronics</a>
+            <a href="./tools.html">Tools</a>
+            <a href="./clothes.html">Clothes</a>
+            <a href="./music.html">Musical instruments</a>
+          </div>
+        </div>
+        </div>
+
+      <button class="nav-btn" onclick="window.location.href='./cart.html'">
+  <i class="fa-solid fa-cart-shopping"></i>
+</button>
+
+<button class="nav-btn" onclick="window.location.href='./signin.html'">
+  <i class="fa-solid fa-user"></i>
+</button>
+
+      <button class="nav-btn" id="langToggle" >
+        <i class="fa-solid fa-globe"></i>
+      </button>
+      </nav>
+    </div>
+  </header>
+  <br><br><br><br><br><br>
+ <section class="rentals">
+  <div class="rental-top">
+   <button class="electronics-btn"> Electronics </button>
+  <h2>Explore Our Rental Collection</h2>
+  </div>
+  <p>Discover a wide range of electronics available for rent at affordable prices.</p>
+ </section>
+ <!-- products section -->
+  <section class="products">
+    <div class="product-card" data-url="../pages/products/electronics/canon-ef-50mm/canon-ef-50mm.html">
+      
+    <img src="../photos/Camera.jpeg" alt="camera">
+    <h3>canon EF 50mm f/1.8 STM</h3>
+    <p>PERFECT FOR PORTRAIT PHOTOGRAPHY.</p>
+    <span class="price">150EGP/day</span>
+    <button class="rent-btn">add to cart</button>
+    </div>
+    <div class="product-card" data-url="../pages/products/electronics/professional-drone/professional-drone.html">
+    <img src="../photos/drone.jpg" alt="drone">
+    <h3>Professional Drone</h3>
+    <p>Easy-to-fly drone with 4k video </p>
+    <span class="price">200EGP/day</span>
+    <button class="rent-btn">add to cart</button>
+    </div>
+
+    <div class="product-card" data-url="../pages/products/electronics/projector/projector.html">
+    <img src="../photos/projector.jpg" alt="Projector">
+    <h3>Projector</h3>
+    <p>Perfect for presentations and movie nights.</p>
+    <span class="price">100EGP/day</span>
+    <button class="rent-btn">add to cart</button>
+    </div>
+
+    <div class="product-card" data-url="../pages/products/electronics/speaker/speaker.html"  >
+    <img src="../photos/speaker.jpg" alt="Speaker" >
+    <h3>Speaker</h3>
+    <p>Portable speaker with excellent sound quality.</p>
+    <span class="price">70EGP/day</span>
+    <button class="rent-btn">add to cart</button>
+    </div>
+    
+   <div class="product-card" data-url="../pages/products/electronics/lenovo-laptop/lenovo-laptop.html">
+    <img src="../photos/laptop.jpeg" alt="Laptop">
+    <h3>lenovo Laptop</h3>
+    <p>High-performance laptop for all your needs.</p>
+    <span class="price">300EGP/day</span>
+    <button class="rent-btn">add to cart</button>
+    </div>
+
+    <div class="product-card" data-url="../pages/products/electronics/playstation5/playstation5.html">
+    <img src="../photos/playstation.jpg" alt="playstation">
+    <h3>PlayStation 5</h3>
+    <p>Best gaming console for immersive experiences.</p>
+    <span class="price">200EGP/day</span>
+    <button class="rent-btn">add to cart</button>
+    </div>
+
+    <div class="product-card" data-url="../pages/products/electronics/hp-printer/hp-printer.html">
+    <img src="../photos/hp printer.jpg" alt="hp printer">
+    <h3>HP Printer</h3>
+    <p>High-quality printer for all your document needs.</p>
+    <span class="price">150EGP/day</span>
+    <button class="rent-btn">add to cart</button>
+    </div>
+
+     <div class="product-card" data-url="../pages/products/electronics/ipad/ipad.html">
+    <img src="../photos/IPAD.jpg" alt="IPAD">
+    <h3>IPAD - Apple(EG)</h3>
+    <p>perfect for entertainment and productivity.</p>
+    <span class="price">150EGP/day</span>
+    <button class="rent-btn">add to cart</button>
+    </div>
+
+ <div class="product-card" data-url="../pages/products/electronics/dslr-camera/dslr-camera.html">
+    <img src="../photos/DSLR camera.png" alt="DSLR Camera">
+    <h3>DSLR Camera Kit</h3>
+    <p>Includes 3 lenses & accessories.</p>
+    <span class="price">150EGP/day</span>
+    <button class="rent-btn">add to cart</button>
+    </div>
+
+ <div class="product-card" data-url="../pages/products/electronics/macbook-pro/macbook-pro.html">
+    <img src="../photos/macbook.jpg" alt="MacBook">
+    <h3>MacBook Pro</h3>
+    <p>Powerful laptop for professionals.</p>
+    <span class="price">500EGP/day</span>
+    <button class="rent-btn">add to cart</button>
+    </div>
+
+ <div class="product-card" data-url="../pages/products/electronics/microphone/microphone.html">
+    <img src="../photos/microphone..jpg" alt="Microphone">
+    <h3>Microphone</h3>
+    <p>High-quality microphone for clear audio recording.</p>
+    <span class="price">150EGP/day</span>
+    <button class="rent-btn">add to cart</button>
+    </div>
+  </section>
+     <!-- pagination -->
+  <ul class="pagination">
+    <li class="active"><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">...</a></li>
+  </ul>
+
+    <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="footer-container">
+
+      <!-- Logo + icons -->
+      <div class="footer-section">
+        <img src="../photos/Rectangle 17.png" alt="Renturn Logo" class="logo">
+       
+        <p>Your trusted partner for quality tool<br> and equipment rentals.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./about.html">About Us</a></li>
+          <li><a href="./privacypolicy.html">Privacy Policy</a></li>
+          <li><a href="./termsandconditions.html">Terms and Conditions</a></li>
+        </ul>
+      </div>
+
+      <!-- Account -->
+      <div class="footer-section">
+        <h4>Account</h4>
+        <ul>
+          <li><a href="./cart.html">Shopping Cart</a></li>
+          <li><a href="./account.html">My Account</a></li>
+        
+        </ul>
+      </div>
+
+      <!-- Support -->
+      <div class="footer-section">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="./help.html.html">Help Center</a></li>
+          <li><a href="./safety.html.html">Safety Guidelines</a></li>
+          
+        </ul>
+      </div>
+    
+    <!-- Contact Section -->
+   <div class="footer-section">
+        <h4>Contact Us</h4>
+        <ul>
+          <li><img src="../photos/Rectangle 14.png" alt="Phone Icon" class="phone-icon"> +201 123 4567 </li>
+          <li><img src="../photos/mail.png" alt="Email Icon" class="email-icon"> renturner@gmail.com</li>
+          <br><p>follow us on social media</p><br>
+           <div class="social-icons">
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+        </ul>
+      </div>
+      </div>
+
+    <!-- Bottom Section -->
+    <div class="footer-bottom">
+      <div class="payment-icons">
+        <a href="#" aria-label="PayPal"><i class="fab fa-cc-paypal"></i></a>
+        <a href="#" aria-label="Apple Pay"><i class="fab fa-cc-apple-pay"></i></a>
+        <a href="#" aria-label="Visa"><i class="fab fa-cc-visa"></i></a>
+      </div>
+      <p>© 2025 Renturn. All rights reserved.</p>
+    </div>
+  </footer>
+ 
+  <script src="../../lang.js"></script>
+  <script src="../js/categories.js"></script>  
+</body>
+</html>
+
+
+
+
+
