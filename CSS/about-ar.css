@@ -1,0 +1,697 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  
+}
+
+body {
+  direction: rtl;
+  text-align: right;
+}
+
+
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+header {
+  background: #fff;
+  padding: 15px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+  transition: top 0.4s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.logo img {
+  height: 70px; 
+  margin-left: -40px;
+}
+
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .search {
+  flex: 0.6;
+  margin: 0px 20px;
+  margin-top: 20px;
+  position: relative;
+  
+}
+
+header .search input {
+  width: 100%;
+  padding: 8px 35px 8px 15px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+}
+header .search p{
+  color: red;
+  visibility:hidden;
+  font-size: 12px;
+}
+
+header .search i {
+  position: absolute;
+  right: 12px;
+  top: 30%;
+  transform: translateY(-50%);
+  color: #3e90aa;
+}
+
+header nav a,
+header nav i {
+  margin-left: 20px;
+  color: #0c688d;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+nav {
+    display: flex;
+  align-items: center;
+}
+.nav-v {
+  display: flex;
+  align-items: center;
+}
+
+.nav-v a {
+  position: relative;
+  color: #2e5077;
+  transition: color 0.3s;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 4px 10px;
+}
+
+.nav-v a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: #4da1a9;
+  transition: width 0.4s;
+}
+
+.nav-v a:hover {
+  color: #4da1a9;
+  animation: navFade 0.5s;
+}
+
+.nav-v a:hover::after {
+  width: 100%;
+}
+
+@keyframes navFade {
+  0% { opacity: 0; transform: translateY(-8px);}
+  100% { opacity: 1; transform: translateY(0);}
+}
+
+.nav-btn{
+  background:#acd7e8;
+  color:#050505;
+  border:none;
+  border-radius:50%;
+  width:30px;
+  height:30px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  cursor:pointer;
+  margin-left:15px;
+  transition:0.25s;
+  transform: scale(1);
+  gap:15px;
+
+}
+
+.nav-btn:hover{
+  background:#4da1a9;
+  transform:translateY(-3px) scale(1.05);   
+    box-shadow:0 6px 15px rgba(0,0,0,0.2);  
+}
+.nav-btn:active{
+  transform: scale(0.9);   
+  box-shadow: none;   
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background: none;
+  border: none;
+  color: #2e5077;
+  font-weight: 500;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 4px 10px;
+  transition: color 0.3s;
+}
+
+.dropbtn:hover {
+  color: #4da1a9;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 6px;
+  z-index: 1000;
+}
+
+.dropdown-content a {
+  color: #2e5077;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+  transition: background 0.3s, color 0.3s;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+  color: #4da1a9;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+ 
+ /* == Rentals section == */
+.rentals{
+  text-align: center;
+  padding: 40px 0;
+}
+.rental-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  position: relative;
+  gap: 20px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+ 
+.rentals h2{
+  color: #105b79;
+  font-size: 29px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.rentals p{
+  color:  #4da1a9;
+  font-size: 15px;
+}
+
+
+
+/* ========== Reset & Base Styles ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ========== Section One (Header Banner) ========== */
+.header-banner {
+  width: 100%;
+  height: 90vh;
+  background: #2E5077;
+  position: relative;
+  overflow: hidden;
+}
+
+.header-banner img {
+  width: 1300px;
+  height: 70vh;
+  margin-left: 100px;
+  padding-top: 150px;
+}
+
+.header-banner .title {
+  position: absolute;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  animation: bounce 2s infinite;
+}
+
+.header-banner h1 {
+  font-size: 45px;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header-banner p {
+  color: #fff;
+  opacity: 0.8;
+  letter-spacing: 3px;
+    font-size: 18px;
+    font-family: initial;
+  
+}
+
+/* Bounce animation */
+@keyframes bounce {
+  0%, 100% {
+    transform: translate(-50%, 0);
+  }
+  50% {
+    transform: translate(-50%, -15px);
+  }
+}
+
+/* ========== Section Two (Our Story) ========== */
+.section-story {
+  display: flex;
+  margin: 100px 200px;
+  gap: 50px;
+}
+
+.section-story img {
+  width: 500px;
+  height: 70vh;
+
+}
+
+.section-story .text {
+  margin-left: 210px;
+  margin-top: 100px;
+  max-width: 500px;
+  font-size: 18px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.section-story h1 {
+  font-size: 40px;
+  font-weight: 900;
+  margin-bottom: 15px;
+  font-family: “Arial Black”, Gadget, sans-serif;
+    color: #2E5077;
+}
+
+.section-story span {
+  color: #4B9FA6;
+  font-weight: bold;
+}
+
+/* ========== Section Three (Our Purpose) ========== */
+.section-purpose {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+  background: #F6F4F0;
+  padding: 100px 150px;
+}
+
+.section-purpose .text {
+  max-width: 500px;
+  font-size: 18px;
+  line-height: 1.6;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.section-purpose h1 {
+  font-size: 40px;
+  font-weight: 900;
+  margin-bottom: 15px;
+  color: #2E5077;
+  font-family: “Arial Black”, Gadget, sans-serif;
+
+}
+.section-purpose img { 
+    margin-left: 50px;
+     height: 70vh;
+        width: 600px;
+     }
+
+
+/* ========== Section Four (What We Offer) ========== */
+.section-offer {
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.section-offer h1 {
+  font-size: 34px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  margin-top: 50px;
+  color: #2E5077;
+    font-family: “Arial Black”, Gadget, sans-serif;
+    margin-bottom: 15px;
+}
+
+
+.section-offer p {
+  margin-bottom: 60px;
+  color: #444;
+    font-size: 18px;
+  
+}
+
+.section-offer .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+  gap: 20px;
+  justify-content: center;
+}
+
+.section-offer .card {
+  background: #F6F4F0;
+  border-radius: 15px;
+  width: 400px;
+  height: 300px;
+  text-align: left;
+  padding: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section-offer .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.section-offer .card img {
+  width: 50px;
+  height: 60px;
+}
+
+.section-offer .card h1 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 15px 0 10px 0;
+}
+
+.section-offer .card p {
+  font-size: 14px;
+  color: #333;
+}
+
+/* ========== Section Five (What Sets Us Apart) ========== */
+.section-apart {
+  background: #4B9FA6;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.section-apart h1 {
+  font-size: 28px;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 15px;
+  padding-top: 10px;
+}
+
+.section-apart p {
+  margin-bottom: 80px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.section-apart .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 600px);
+  grid-gap: 50px;
+  justify-content: center;
+}
+
+.section-apart .card {
+  display: flex;
+  background: rgba(255,255,255,0.3);
+  border-radius: 10px;
+  width: 600px;
+  height: 150px;
+  padding: 20px;
+  color: #fff;
+}
+
+.section-apart .card img {
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+  margin-top: 10px;
+
+  opacity: 0;
+  transform: scale(0.8);
+  animation: zoomFadeIn 0.8s ease forwards;
+}
+
+/* keyframes */
+@keyframes zoomFadeIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.section-apart .card h1 {
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 7px;
+}
+
+.section-apart .card p {
+  font-size: 14px;
+}
+
+/* ========== Section Six (Vision) ========== */
+.section-vision {
+  display: flex;
+  align-items: center;
+  padding: 100px 200px;
+}
+
+.section-vision img {
+  width: 500px;
+  height: auto;
+  margin-right: 70px;
+}
+
+.section-vision .text {
+  max-width: 600px;
+}
+
+.section-vision h1 {
+  font-size: 40px;
+  font-weight: 900;
+  margin-bottom: 15px;
+  color: #2E5077;
+    font-family: “Arial Black”, Gadget, sans-serif;
+
+
+}
+
+.section-vision p {
+  font-size: 18px;
+  color: #333;
+    line-height: 1.6;
+    
+}
+
+
+/* ===== Footer ===== */
+ 
+ 
+main{
+  flex: 1;
+}
+.footer {
+  background-color: #224b74;
+  color: #fff;
+  padding: 40px 0;
+  width: 100%;
+  clear: both;
+  position: relative;
+  display: inline-block;
+  margin-top: auto;
+}
+ 
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+ 
+ 
+ 
+.footer-section {
+  flex: 1 1 200px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  display: inline-block;
+}
+.footer-section p {
+ font-size: 15px;
+  color: white;
+}
+ 
+.footer-section h4 {
+  margin-bottom: 10px;
+}
+ 
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+ 
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+ 
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+ 
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+ 
+.footer-section ul p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #A5E3D6;
+}
+ 
+/* Logo in footer */
+.footer .logo {
+  width: 250px;
+  margin-bottom: 6px;
+}
+ 
+/* Social Icons */
+.social-icons a {
+  color: #A5E3D6;
+  font-size: 20px;
+  margin-right: 10px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+ 
+.social-icons a:hover {
+  color: #8ab4f8;
+  transform: scale(1.2);
+}
+ 
+/* Contact Section */
+.footer-contact {
+  max-width: 800px;
+  margin: auto;
+  padding: 25px;
+  border: 1px solid #466d95;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+ 
+.footer-contact a {
+  color: #8ab4f8;
+  text-decoration: none;
+  margin-left: 25px;
+}
+ 
+.footer-contact a:hover {
+  text-decoration: underline;
+}
+.phone{
+  width: 32px;
+}
+.callcenter{
+  width: 30px;
+}
+ 
+/* Bottom Section */
+.footer-bottom {
+  max-width: 1200px;
+  margin: 20px auto 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-top: 1px solid #466d95;
+  padding-top: 10px;
+}
+ 
+.footer-bottom p {
+  font-size: 13px;
+  margin: 10px 0;
+}
+ 
+/* Payment Icons */
+.payment-icons a {
+  color: #fff;
+  font-size: 32px;
+  margin-right: 15px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+ 
+.payment-icons a:hover {
+  color: #8ab4f8;
+  transform: scale(1.2);
+}
+ 
+.phone-icon {
+  width: 30px;
+}
+ 
+.email-icon {
+  width: 30px;
+}
+ 
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-container {
+    flex-direction: column;
+  }
+  .footer-contact {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+}
